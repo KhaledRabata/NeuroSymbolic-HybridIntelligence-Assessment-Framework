@@ -1,0 +1,218 @@
+{
+  "scenarios": {
+    "s1": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "No evidence indicates that the AI agent initiates contact or forms its own sub-goals."
+      },
+      "Adaptive": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "There is no evidence that the system adapts based on implicit feedback or anticipates human needs."
+      },
+      "Responsible": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The system does not demonstrate the ability to identify or surface the grounds for its decisions."
+      },
+      "Explainable": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "Explanations are not mentioned as being tailored or interactive, indicating a lack of contextual adaptation."
+      }
+    },
+    "s2": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The absence of an AI agent in the recorded human-AI interaction indicates that the system cannot support effective collaboration, thus limiting it to a reactive level."
+      },
+      "Adaptive": {
+        "level": 2,
+        "level_label": "Proactive",
+        "justification": "There is no evidence provided to suggest the system's adaptability, but the maximum admissible level is 3, allowing for a conservative classification at level 2."
+      },
+      "Responsible": {
+        "level": 2,
+        "level_label": "Proactive",
+        "justification": "There is no evidence provided regarding the system's responsible capabilities, but the maximum admissible level is 3, allowing for a conservative classification at level 2."
+      },
+      "Explainable": {
+        "level": 2,
+        "level_label": "Proactive",
+        "justification": "There is no evidence provided regarding the system's explainability, but the maximum admissible level is 3, allowing for a conservative classification at level 2."
+      }
+    },
+    "s3": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "No evidence indicates that the AI agent initiates contact or collaborates without being explicitly prompted."
+      },
+      "Adaptive": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The system shows no evidence of adapting its behavior based on implicit feedback or anticipating human needs."
+      },
+      "Responsible": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "There is no evidence that the system identifies or reflects on the grounds for its decisions."
+      },
+      "Explainable": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The explanations provided by the system are not indicated to be tailored or context-specific."
+      }
+    },
+    "s4": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The absence of AI in interaction episodes indicates that the system cannot facilitate meaningful human-AI interactions, limiting its collaborative capabilities."
+      },
+      "Adaptive": {
+        "level": 2,
+        "level_label": "Proactive",
+        "justification": "There is no evidence of gaps in the Adaptive dimension, allowing for a proactive classification."
+      },
+      "Responsible": {
+        "level": 2,
+        "level_label": "Proactive",
+        "justification": "There is no evidence of gaps in the Responsible dimension, allowing for a proactive classification."
+      },
+      "Explainable": {
+        "level": 2,
+        "level_label": "Proactive",
+        "justification": "There is no evidence of gaps in the Explainable dimension, allowing for a proactive classification."
+      }
+    },
+    "s5": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "No evidence indicates that the AI agent initiates collaboration or maintains a relationship over time."
+      },
+      "Adaptive": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "There is no evidence of the system adapting based on implicit feedback or anticipating human needs."
+      },
+      "Responsible": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The system does not demonstrate the ability to identify or reflect on the grounds for its decisions."
+      },
+      "Explainable": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "Explanations provided by the system are not described as tailored or interactive."
+      }
+    },
+    "s6": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The absence of AI involvement in interactions, as indicated by the critical gap, limits collaboration to a reactive level."
+      },
+      "Adaptive": {
+        "level": 2,
+        "level_label": "Proactive",
+        "justification": "There is no evidence of gaps in this dimension, allowing for a conservative classification at the proactive level."
+      },
+      "Responsible": {
+        "level": 2,
+        "level_label": "Proactive",
+        "justification": "There is no evidence of gaps in this dimension, allowing for a conservative classification at the proactive level."
+      },
+      "Explainable": {
+        "level": 2,
+        "level_label": "Proactive",
+        "justification": "There is no evidence of gaps in this dimension, allowing for a conservative classification at the proactive level."
+      }
+    },
+    "s7": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "No evidence indicates that the AI agent initiates collaboration or maintains a relationship over time."
+      },
+      "Adaptive": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "There is no evidence of the system adapting its behavior based on implicit feedback or anticipating human needs."
+      },
+      "Responsible": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The system does not demonstrate any capability to identify or reflect on the grounds for its decisions."
+      },
+      "Explainable": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "Explanations provided by the system are not tailored to the specific user or context."
+      }
+    },
+    "s8": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The absence of human agent involvement in the recorded interaction means the system cannot facilitate true collaboration, thus it is classified as Reactive."
+      },
+      "Adaptive": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "There is no evidence of adaptive behavior, so the lower level is chosen conservatively."
+      },
+      "Responsible": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "Without evidence of responsible behavior, the lower level is assigned conservatively."
+      },
+      "Explainable": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "There is no evidence of explainability features, leading to a conservative classification at the lower level."
+      }
+    }
+  },
+  "summary": {
+    "Collaborative": {
+      "distribution": {
+        "1": 8,
+        "2": 0,
+        "3": 0
+      },
+      "modal_level": 1,
+      "modal_label": "Reactive"
+    },
+    "Adaptive": {
+      "distribution": {
+        "1": 5,
+        "2": 3,
+        "3": 0
+      },
+      "modal_level": 1,
+      "modal_label": "Reactive"
+    },
+    "Responsible": {
+      "distribution": {
+        "1": 5,
+        "2": 3,
+        "3": 0
+      },
+      "modal_level": 1,
+      "modal_label": "Reactive"
+    },
+    "Explainable": {
+      "distribution": {
+        "1": 5,
+        "2": 3,
+        "3": 0
+      },
+      "modal_level": 1,
+      "modal_label": "Reactive"
+    }
+  }
+}

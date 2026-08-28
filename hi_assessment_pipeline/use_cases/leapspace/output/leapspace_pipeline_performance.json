@@ -1,0 +1,70 @@
+{
+  "usecase": "leapspace",
+  "phases": {
+    "2": {
+      "runtime_sec": 0.0723118782043457,
+      "build_runtime_sec": 0.0720059871673584,
+      "total_triples": 1019,
+      "usecases": 8,
+      "hiteams": 8,
+      "human_agents": 12,
+      "ai_agents": 14,
+      "goals": 8,
+      "human_tasks": 23,
+      "ai_tasks": 20,
+      "capabilities": 22,
+      "contexts": 8,
+      "interactions": 15,
+      "evaluations": 8,
+      "metrics": 13
+    },
+    "3": {
+      "runtime_sec": 0.18317389488220215,
+      "kg_triples": 1019,
+      "shapes_triples": 138,
+      "total_scenarios": 8,
+      "passed": 8,
+      "failed": 0,
+      "shacl_results_total": 0,
+      "unmapped_results": 0,
+      "overall_conforms": true
+    },
+    "4": {
+      "runtime_sec": 0.9327127933502197,
+      "kg_triples": 1019,
+      "shapes_triples": 144,
+      "ontology_triples": 341,
+      "total_scenarios": 8,
+      "pass": 0,
+      "warning": 0,
+      "fail": 8,
+      "shacl_results_total": 31,
+      "unmapped_results": 0,
+      "overall_conforms": false
+    },
+    "5": {
+      "runtime_sec": 48.27656030654907,
+      "scenarios_total": 8,
+      "scenarios_requiring_llm": 8,
+      "llm_fallback_triggered": 0,
+      "llm_fallback_rate": 0.0,
+      "total_prompt_tokens": 9030,
+      "total_completion_tokens": 4285,
+      "total_tokens": 13315,
+      "total_gaps": 25
+    },
+    "6": {
+      "runtime_sec": 57.35248303413391,
+      "recommendation_calls": 8,
+      "recommendation_fallbacks": 0,
+      "care_level_calls": 8,
+      "care_level_fallbacks": 0,
+      "executive_summary_fallback": false,
+      "total_llm_fallbacks": 0,
+      "total_prompt_tokens": 18401,
+      "total_completion_tokens": 5351,
+      "total_tokens": 23752
+    }
+  },
+  "total_runtime_sec": 106.81724190711975
+}

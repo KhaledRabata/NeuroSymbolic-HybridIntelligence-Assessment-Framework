@@ -1,0 +1,323 @@
+{
+  "usecase": "leapspace",
+  "phase": "5-gap-analysis",
+  "method": "neuro-symbolic",
+  "llm_model": "gpt-4o-mini",
+  "timestamp": "2026-08-25T11:18:11.886093+00:00",
+  "shacl_report_file": "/Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/use_cases/leapspace/output/leapspace_shacl_report.ttl",
+  "total_scenarios": 8,
+  "scenarios_with_gaps": 8,
+  "total_gaps": 25,
+  "care_gap_summary": {
+    "Collaborative": 8,
+    "Adaptive": 7,
+    "Responsible": 8,
+    "Explainable": 2,
+    "General": 0
+  },
+  "severity_summary": {
+    "Critical": 25,
+    "Major": 0,
+    "Minor": 0
+  },
+  "scenarios": {
+    "s1": {
+      "scenario_id": "S1",
+      "overall_assessment": "The leapspace AI system fails to meet critical HI principles, particularly in the areas of responsibility, collaboration, and adaptability. Key capabilities for fairness, explainability, and human feedback mechanisms are entirely absent.",
+      "gaps": [
+        {
+          "gap_id": "G-S1-01",
+          "care_dimension": "Responsible",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Lack of Fairness Mechanisms",
+          "gap_description": "The system lacks any capability related to fairness or bias mitigation, which is essential for responsible AI. Without these mechanisms, the system risks producing discriminatory outcomes, undermining trust and ethical standards in human-AI collaboration.",
+          "hi_principle_violated": "CARE Responsible",
+          "practical_impact": "This absence can lead to biased recommendations, negatively affecting decision-making processes and potentially harming users or stakeholders."
+        },
+        {
+          "gap_id": "G-S1-02",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Absence of Explainability",
+          "gap_description": "The AI system does not possess any explainability capabilities, meaning it cannot clarify its decisions or recommendations to human agents. This lack of transparency is detrimental to effective collaboration, as humans cannot understand or trust the AI's outputs.",
+          "hi_principle_violated": "CARE Explainable",
+          "practical_impact": "Without explainability, users may be hesitant to rely on AI-generated insights, leading to reduced engagement and collaboration between human and AI agents."
+        },
+        {
+          "gap_id": "G-S1-03",
+          "care_dimension": "Adaptive",
+          "severity": "Critical",
+          "component": "Evaluation HI Conformance",
+          "gap_title": "Missing Human Feedback Mechanism",
+          "gap_description": "The system does not incorporate human feedback into its evaluation processes, which is crucial for adaptive learning. Without human signals to inform updates, the AI cannot improve its performance or align with user preferences over time.",
+          "hi_principle_violated": "CARE Adaptive",
+          "practical_impact": "This gap limits the system's ability to evolve and meet user needs, resulting in a static AI that may become less relevant or effective in dynamic environments."
+        },
+        {
+          "gap_id": "G-S1-04",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "Collaborative — AI in Interaction",
+          "gap_title": "No AI Participation in Interactions",
+          "gap_description": "The recorded interactions lack the involvement of an artificial agent, which is essential for true human-AI collaboration. This absence means that the system cannot facilitate joint task execution or shared decision-making.",
+          "hi_principle_violated": "CARE Collaborative",
+          "practical_impact": "Without AI participation, the potential for synergistic collaboration is lost, leading to a fragmented approach where human agents work in isolation from AI capabilities."
+        }
+      ]
+    },
+    "s2": {
+      "scenario_id": "S2",
+      "overall_assessment": "The leapspace AI system fails to meet critical HI conformance requirements, particularly in the areas of responsibility, collaboration, and adaptability. Key mechanisms for fairness, explainability, and human feedback are entirely absent.",
+      "gaps": [
+        {
+          "gap_id": "G-S2-01",
+          "care_dimension": "Responsible",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Absence of Fairness Mechanisms",
+          "gap_description": "The system lacks any capability for fairness or bias mitigation, which is essential for responsible AI. Without these mechanisms, the system risks producing discriminatory outcomes, undermining trust and ethical standards in human-AI collaboration.",
+          "hi_principle_violated": "CARE Responsible",
+          "practical_impact": "This absence can lead to biased decisions that affect users negatively, diminishing the quality and reliability of the collaborative experience."
+        },
+        {
+          "gap_id": "G-S2-02",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Lack of Explainability",
+          "gap_description": "The AI system does not provide explanations for its decisions, which is crucial for effective collaboration. Without explainability, human agents cannot understand or trust the AI's outputs, leading to potential misalignment in collaborative tasks.",
+          "hi_principle_violated": "CARE Explainable",
+          "practical_impact": "This gap can severely hinder the ability of human users to engage with the AI, resulting in reduced effectiveness and potential errors in decision-making."
+        },
+        {
+          "gap_id": "G-S2-03",
+          "care_dimension": "Adaptive",
+          "severity": "Critical",
+          "component": "Evaluation HI Conformance",
+          "gap_title": "No Human Feedback Mechanism",
+          "gap_description": "The system lacks a feedback mechanism that incorporates human actions, which is vital for adaptive learning. Without human signals to inform model updates, the AI cannot improve its performance or align with user preferences over time.",
+          "hi_principle_violated": "CARE Adaptive",
+          "practical_impact": "This deficiency prevents the system from evolving based on user interactions, leading to stagnation and a failure to meet the changing needs of users in unfamiliar research areas."
+        }
+      ]
+    },
+    "s3": {
+      "scenario_id": "S3",
+      "overall_assessment": "The leapspace AI system fails to meet essential HI principles, particularly in responsibility and collaboration. Key capabilities for fairness, explainability, and human-AI interaction are entirely absent.",
+      "gaps": [
+        {
+          "gap_id": "G-S3-01",
+          "care_dimension": "Responsible",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Absence of Fairness Mechanisms",
+          "gap_description": "The system lacks any capability related to fairness or bias mitigation, which is crucial for ensuring equitable outcomes in AI decision-making. Without these mechanisms, the system risks perpetuating discriminatory practices, undermining trust and accountability in human-AI collaboration.",
+          "hi_principle_violated": "CARE Responsible",
+          "practical_impact": "This absence can lead to biased recommendations that adversely affect users, diminishing the overall effectiveness and ethical standing of the AI system."
+        },
+        {
+          "gap_id": "G-S3-02",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "Collaborative — AI in Interaction",
+          "gap_title": "Lack of Human-AI Interaction",
+          "gap_description": "The recorded interactions do not involve any artificial agent, which is a fundamental requirement for collaborative human-AI systems. This absence means that the system cannot facilitate meaningful joint task execution or decision-making, severely limiting its collaborative potential.",
+          "hi_principle_violated": "CARE Collaborative",
+          "practical_impact": "Without AI participation in interactions, users cannot leverage AI capabilities effectively, leading to a disjointed experience that fails to harness the strengths of both human and AI agents."
+        },
+        {
+          "gap_id": "G-S3-03",
+          "care_dimension": "Adaptive",
+          "severity": "Critical",
+          "component": "Evaluation HI Conformance",
+          "gap_title": "No Human Feedback Mechanism",
+          "gap_description": "The feedback mechanism does not incorporate human actions, which is essential for the system to learn and adapt over time. Without human input, the AI cannot refine its models or improve its performance based on user preferences and experiences.",
+          "hi_principle_violated": "CARE Adaptive",
+          "practical_impact": "This lack of adaptive learning hinders the system's ability to evolve and meet user needs, resulting in a static solution that may become less relevant over time."
+        },
+        {
+          "gap_id": "G-S3-04",
+          "care_dimension": "Explainable",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Absence of Explainability Mechanisms",
+          "gap_description": "The system lacks any explainability capabilities, preventing it from clarifying its decisions or recommendations to human agents. This gap undermines users' ability to understand and trust AI outputs, which is vital for effective collaboration.",
+          "hi_principle_violated": "CARE Explainable",
+          "practical_impact": "Without explainability, users may be hesitant to act on AI recommendations, leading to reduced engagement and reliance on the system, ultimately compromising the collaborative process."
+        }
+      ]
+    },
+    "s4": {
+      "scenario_id": "S4",
+      "overall_assessment": "The leapspace AI system fails to meet critical HI conformance standards, particularly in responsible AI practices. The absence of fairness mechanisms significantly undermines the system's integrity and trustworthiness.",
+      "gaps": [
+        {
+          "gap_id": "G-S4-01",
+          "care_dimension": "Responsible",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Lack of Fairness Mechanisms",
+          "gap_description": "The system lacks any capability related to fairness or bias mitigation, which is essential for responsible AI. This absence can lead to discriminatory outcomes, undermining trust and accountability in human-AI interactions.",
+          "hi_principle_violated": "Responsible",
+          "practical_impact": "Without fairness-aware processing, the system risks perpetuating biases, which can alienate users and diminish the effectiveness of collaboration between humans and AI."
+        }
+      ]
+    },
+    "s5": {
+      "scenario_id": "S5",
+      "overall_assessment": "The leapspace AI system fails to meet essential HI principles, particularly in fairness, explainability, and adaptive feedback mechanisms. These deficiencies critically undermine the collaborative potential of the system.",
+      "gaps": [
+        {
+          "gap_id": "G-S5-01",
+          "care_dimension": "Responsible",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Lack of Fairness Mechanisms",
+          "gap_description": "The system lacks any capability for fairness or bias mitigation, which is crucial for ensuring equitable outcomes in AI-assisted decision-making. Without these mechanisms, the system risks perpetuating discrimination and undermining trust in human-AI collaboration.",
+          "hi_principle_violated": "CARE Responsible",
+          "practical_impact": "The absence of fairness mechanisms can lead to biased recommendations, diminishing the quality of collaboration and potentially harming users' interests."
+        },
+        {
+          "gap_id": "G-S5-02",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Missing Explainability Features",
+          "gap_description": "The system does not include any explainability capabilities, preventing human agents from understanding the AI's decisions and recommendations. This lack of transparency is detrimental to effective collaboration, as humans cannot trust or verify AI outputs.",
+          "hi_principle_violated": "CARE Explainable",
+          "practical_impact": "Without explainability, users may struggle to engage meaningfully with the AI, leading to reduced collaboration effectiveness and potential rejection of AI suggestions."
+        },
+        {
+          "gap_id": "G-S5-03",
+          "care_dimension": "Adaptive",
+          "severity": "Critical",
+          "component": "Evaluation HI Conformance",
+          "gap_title": "Absence of Human Feedback Mechanisms",
+          "gap_description": "The system lacks a feedback mechanism that incorporates human actions, which is essential for adaptive learning and improvement. This absence means the AI cannot refine its performance based on user interactions, limiting its effectiveness over time.",
+          "hi_principle_violated": "CARE Adaptive",
+          "practical_impact": "Without human-driven feedback loops, the AI's ability to evolve and better serve user needs is severely compromised, leading to stagnation in performance and user dissatisfaction."
+        }
+      ]
+    },
+    "s6": {
+      "scenario_id": "S6",
+      "overall_assessment": "The leapspace AI system fails to meet critical HI conformance standards, particularly in the Responsible and Collaborative dimensions, lacking essential fairness, explainability, and adaptive feedback mechanisms.",
+      "gaps": [
+        {
+          "gap_id": "G-S6-01",
+          "care_dimension": "Responsible",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Lack of Fairness Mechanisms",
+          "gap_description": "The system does not incorporate any fairness-aware processing or bias mitigation capabilities, which is essential for ensuring equitable outcomes. This absence undermines the Responsible principle, as it may lead to discriminatory practices in funding opportunity matching.",
+          "hi_principle_violated": "CARE Responsible",
+          "practical_impact": "Without fairness mechanisms, the AI may perpetuate biases, leading to unfair treatment of applicants and damaging trust in the system."
+        },
+        {
+          "gap_id": "G-S6-02",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Absence of Explainability",
+          "gap_description": "The system lacks the capability to explain its decisions to human agents, which is crucial for fostering collaboration. This gap violates the Explainable principle, as users cannot understand or trust the AI's recommendations without transparency.",
+          "hi_principle_violated": "CARE Explainable",
+          "practical_impact": "The inability to explain decisions may lead to user frustration and reluctance to engage with the AI, ultimately hindering effective collaboration."
+        },
+        {
+          "gap_id": "G-S6-03",
+          "care_dimension": "Adaptive",
+          "severity": "Critical",
+          "component": "Evaluation HI Conformance",
+          "gap_title": "Missing Human Feedback Mechanisms",
+          "gap_description": "The system does not incorporate human feedback in its evaluation processes, which is vital for learning and improvement. This absence violates the Adaptive principle, as the AI cannot refine its performance based on user interactions.",
+          "hi_principle_violated": "CARE Adaptive",
+          "practical_impact": "Without human-driven feedback loops, the AI's ability to adapt and enhance its matching capabilities over time is severely limited, reducing its effectiveness."
+        }
+      ]
+    },
+    "s7": {
+      "scenario_id": "S7",
+      "overall_assessment": "The leapspace AI system fails to meet critical HI principles, lacking essential fairness, explainability, and adaptive feedback mechanisms. These deficiencies severely undermine the collaborative potential of the system.",
+      "gaps": [
+        {
+          "gap_id": "G-S7-01",
+          "care_dimension": "Responsible",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Lack of Fairness Mechanisms",
+          "gap_description": "The system does not incorporate any fairness-aware processing capabilities, which is essential for preventing discriminatory outcomes. This absence compromises the ethical integrity of the AI's decisions and recommendations.",
+          "hi_principle_violated": "CARE Responsible",
+          "practical_impact": "Without fairness mechanisms, the AI may produce biased outputs, leading to unfair treatment of users and eroding trust in the system."
+        },
+        {
+          "gap_id": "G-S7-02",
+          "care_dimension": "Explainable",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Absence of Explainability Features",
+          "gap_description": "The lack of explainability capabilities means that the AI cannot clarify its decisions or recommendations to human agents. This gap prevents users from understanding the rationale behind AI outputs, which is crucial for informed decision-making.",
+          "hi_principle_violated": "CARE Explainable",
+          "practical_impact": "Without explainability, users may struggle to trust or effectively collaborate with the AI, limiting the overall effectiveness of the system."
+        },
+        {
+          "gap_id": "G-S7-03",
+          "care_dimension": "Adaptive",
+          "severity": "Critical",
+          "component": "Evaluation HI Conformance",
+          "gap_title": "Missing Human Feedback Mechanism",
+          "gap_description": "The system lacks a feedback mechanism that incorporates human actions, which is vital for adaptive learning. Without human input, the AI cannot refine its performance or align with user preferences over time.",
+          "hi_principle_violated": "CARE Adaptive",
+          "practical_impact": "The absence of adaptive feedback limits the system's ability to improve, resulting in a static AI that may not meet evolving user needs or preferences."
+        }
+      ]
+    },
+    "s8": {
+      "scenario_id": "S8",
+      "overall_assessment": "The leapspace AI system fails to meet essential HI principles, particularly in responsibility, collaboration, and adaptability. Key capabilities for fairness, explainability, and human feedback are entirely absent.",
+      "gaps": [
+        {
+          "gap_id": "G-S8-01",
+          "care_dimension": "Responsible",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Lack of Fairness Mechanisms",
+          "gap_description": "The system lacks any capability related to fairness or bias mitigation, which is crucial for ensuring equitable outcomes. Without these mechanisms, the AI could produce discriminatory results, undermining trust and accountability in the human-AI collaboration.",
+          "hi_principle_violated": "CARE Responsible",
+          "practical_impact": "This absence can lead to biased decision-making, harming stakeholders and eroding confidence in the AI system."
+        },
+        {
+          "gap_id": "G-S8-02",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Absence of Explainability",
+          "gap_description": "The system does not provide any explainability capabilities, preventing human agents from understanding AI decisions or recommendations. This lack of transparency is detrimental to effective collaboration, as humans cannot verify or trust the AI's outputs.",
+          "hi_principle_violated": "CARE Explainable",
+          "practical_impact": "Without explainability, users may hesitate to rely on AI outputs, diminishing the collaborative potential and effectiveness of the system."
+        },
+        {
+          "gap_id": "G-S8-03",
+          "care_dimension": "Adaptive",
+          "severity": "Critical",
+          "component": "Evaluation HI Conformance",
+          "gap_title": "No Human Feedback Mechanism",
+          "gap_description": "The feedback mechanism does not incorporate human actions, which is essential for the system to learn and improve over time. This absence of human-driven feedback loops prevents the AI from adapting to user preferences and reduces its overall effectiveness.",
+          "hi_principle_violated": "CARE Adaptive",
+          "practical_impact": "The lack of adaptability means the system cannot evolve based on user interactions, leading to stagnation and potentially irrelevant outputs."
+        },
+        {
+          "gap_id": "G-S8-04",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "Collaborative — AI in Interaction",
+          "gap_title": "No AI Participation in Interactions",
+          "gap_description": "The recorded interactions do not involve any Artificial Agent, which is a fundamental requirement for collaborative human-AI engagement. This absence means that the system cannot facilitate joint task execution, undermining the collaborative aspect of HI.",
+          "hi_principle_violated": "CARE Collaborative",
+          "practical_impact": "Without AI participation, the system fails to leverage the strengths of both human and AI agents, limiting the potential for effective teamwork and problem-solving."
+        }
+      ]
+    }
+  }
+}

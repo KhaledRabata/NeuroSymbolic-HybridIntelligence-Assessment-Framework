@@ -1,0 +1,69 @@
+{
+  "usecase": "linkedin",
+  "timestamp": "2026-08-25T11:19:49.189300+00:00",
+  "kg_file": "/Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/use_cases/linkedin/output/linkedin_kg.ttl",
+  "shapes_file": "/Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase3_normalization/shapes/normalization_shapes.ttl",
+  "total_scenarios": 8,
+  "passed": 8,
+  "failed": 0,
+  "overall_conforms": true,
+  "scenarios": {
+    "s1": {
+      "label": "S1 — AI-Assisted Candidate Sourcing",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s2": {
+      "label": "S2 — AI-Driven Candidate Evaluation",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s3": {
+      "label": "S3 — Automated Prescreening via InMail",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s4": {
+      "label": "S4 — Fairness-Aware Representative Candidate Ranking",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s5": {
+      "label": "S5 — Explainable AI-Assisted Search",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s6": {
+      "label": "S6 — Recruiter-Hiring Manager Collaborative Decision Making",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s7": {
+      "label": "S7 — Long-Term Personalisation via HLTM",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s8": {
+      "label": "S8 — ATS Integration and Unified Applicant Management (RSC+)",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    }
+  },
+  "unmapped_violations": []
+}

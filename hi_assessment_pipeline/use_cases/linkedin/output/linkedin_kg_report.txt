@@ -1,0 +1,16 @@
+KG Build Report: LINKEDIN
+==========================================
+Use Cases (scenarios)     : 8
+HI Teams                  : 8
+Human Agents (dedup.)     : 7
+Artificial Agents (dedup.): 25
+Goals                     : 8
+Human Tasks               : 36
+AI Tasks                  : 44
+Capabilities (dedup.)     : 40
+Contexts                  : 8
+Interactions              : 26
+Evaluations               : 8
+Metrics (dedup.)          : 27
+------------------------------------------
+Total RDF triples         : 1963

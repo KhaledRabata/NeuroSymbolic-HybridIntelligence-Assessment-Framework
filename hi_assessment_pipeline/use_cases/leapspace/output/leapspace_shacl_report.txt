@@ -1,0 +1,186 @@
+======================================================================
+  HI Conformance Report — LEAPSPACE
+  Phase 4: SHACL Conformance Validation
+  Generated: 2026-08-25 13:17:23
+======================================================================
+
+  CARE PRINCIPLES EVALUATED
+  ─────────────────────────────────────────────────────────
+  C — Collaborative : human and AI agents work together
+  A — Adaptive      : feedback loops support learning
+  R — Responsible   : oversight, fairness, accountability
+  E — Explainable   : AI explains decisions to humans
+
+  Scenarios: 8   PASS: 0   WARNING: 0   FAIL: 8
+  ─────────────────────────────────────────────────────────
+
+  ✗ [S1] S1 — Departmental Literature Review Synthesis
+      Status       : FAIL
+      [Collaborative]
+        ✗ HITeam HI Conformance
+           CARE Explainable: The HI Characteristics annotation does not
+           mention the Explainable dimension. Ensure the AI can explain its
+           decisions to human agents.
+        ✗ HITeam HI Conformance
+           CARE Explainable: No Explainability capability found among agent
+           capabilities. Consider adding mechanisms that allow the AI to
+           explain its decisions or recommendations to human agents.
+        ✗ Collaborative — AI in Interaction
+           CARE Collaborative: Interaction has no Artificial Agent involved.
+           HI requires human-AI interactions.
+      [Adaptive]
+        ✗ Evaluation HI Conformance
+           CARE Adaptive: Feedback mechanism does not appear to involve
+           human actions (no mention of recruiter, human, user, or operator
+           feedback). HI feedback loops should be driven by human signals.
+      [Responsible]
+        ✗ HITeam HI Conformance
+           CARE Responsible (Fairness): No capability found that relates to
+           fairness or bias mitigation. Consider adding fairness-aware
+           processing to prevent discriminatory outcomes.
+
+  ✗ [S2] S2 — Cross-Domain Onboarding for Unfamiliar Research Areas
+      Status       : FAIL
+      [Collaborative]
+        ✗ HITeam HI Conformance
+           CARE Explainable: The HI Characteristics annotation does not
+           mention the Explainable dimension. Ensure the AI can explain its
+           decisions to human agents.
+      [Adaptive]
+        ✗ Evaluation HI Conformance
+           CARE Adaptive: Feedback mechanism does not appear to involve
+           human actions (no mention of recruiter, human, user, or operator
+           feedback). HI feedback loops should be driven by human signals.
+      [Responsible]
+        ✗ HITeam HI Conformance
+           CARE Responsible (Fairness): No capability found that relates to
+           fairness or bias mitigation. Consider adding fairness-aware
+           processing to prevent discriminatory outcomes.
+        ✗ HITeam HI Conformance
+           CARE Responsible: The HI Characteristics annotation does not
+           mention the Responsible dimension. Ensure the system addresses
+           responsibility, fairness, and human control
+
+  ✗ [S3] S3 — Multidisciplinary Evidence Synthesis for Sparse or Fragmented Literature
+      Status       : FAIL
+      [Collaborative]
+        ✗ HITeam HI Conformance
+           CARE Explainable: No Explainability capability found among agent
+           capabilities. Consider adding mechanisms that allow the AI to
+           explain its decisions or recommendations to human agents.
+        ✗ Collaborative — AI in Interaction
+           CARE Collaborative: Interaction has no Artificial Agent involved.
+           HI requires human-AI interactions.
+        ✗ Collaborative — AI in Interaction
+           CARE Collaborative: Interaction has no Artificial Agent involved.
+           HI requires human-AI interactions.
+      [Adaptive]
+        ✗ Evaluation HI Conformance
+           CARE Adaptive: Feedback mechanism does not appear to involve
+           human actions (no mention of recruiter, human, user, or operator
+           feedback). HI feedback loops should be driven by human signals.
+      [Responsible]
+        ✗ HITeam HI Conformance
+           CARE Responsible (Fairness): No capability found that relates to
+           fairness or bias mitigation. Consider adding fairness-aware
+           processing to prevent discriminatory outcomes.
+
+  ✗ [S4] S4 — Evidence-Strength Calibration and Hallucination Mitigation
+      Status       : FAIL
+      [Responsible]
+        ✗ HITeam HI Conformance
+           CARE Responsible (Fairness): No capability found that relates to
+           fairness or bias mitigation. Consider adding fairness-aware
+           processing to prevent discriminatory outcomes.
+
+  ✗ [S5] S5 — Cross-Disciplinary Connection-Finding and Author/Collaborator Search
+      Status       : FAIL
+      [Collaborative]
+        ✗ HITeam HI Conformance
+           CARE Explainable: The HI Characteristics annotation does not
+           mention the Explainable dimension. Ensure the AI can explain its
+           decisions to human agents.
+        ✗ HITeam HI Conformance
+           CARE Explainable: No Explainability capability found among agent
+           capabilities. Consider adding mechanisms that allow the AI to
+           explain its decisions or recommendations to human agents.
+      [Adaptive]
+        ✗ Evaluation HI Conformance
+           CARE Adaptive: Feedback mechanism does not appear to involve
+           human actions (no mention of recruiter, human, user, or operator
+           feedback). HI feedback loops should be driven by human signals.
+      [Responsible]
+        ✗ HITeam HI Conformance
+           CARE Responsible (Fairness): No capability found that relates to
+           fairness or bias mitigation. Consider adding fairness-aware
+           processing to prevent discriminatory outcomes.
+
+  ✗ [S6] S6 — Research-to-Funding Opportunity Matching
+      Status       : FAIL
+      [Collaborative]
+        ✗ HITeam HI Conformance
+           CARE Explainable: The HI Characteristics annotation does not
+           mention the Explainable dimension. Ensure the AI can explain its
+           decisions to human agents.
+        ✗ HITeam HI Conformance
+           CARE Explainable: No Explainability capability found among agent
+           capabilities. Consider adding mechanisms that allow the AI to
+           explain its decisions or recommendations to human agents.
+      [Adaptive]
+        ✗ Evaluation HI Conformance
+           CARE Adaptive: Feedback mechanism does not appear to involve
+           human actions (no mention of recruiter, human, user, or operator
+           feedback). HI feedback loops should be driven by human signals.
+      [Responsible]
+        ✗ HITeam HI Conformance
+           CARE Responsible (Fairness): No capability found that relates to
+           fairness or bias mitigation. Consider adding fairness-aware
+           processing to prevent discriminatory outcomes.
+        ✗ HITeam HI Conformance
+           CARE Responsible: The HI Characteristics annotation does not
+           mention the Responsible dimension. Ensure the system addresses
+           responsibility, fairness, and human control
+
+  ✗ [S7] S7 — AI-Assisted Argument Testing and Draft Strengthening
+      Status       : FAIL
+      [Collaborative]
+        ✗ HITeam HI Conformance
+           CARE Explainable: No Explainability capability found among agent
+           capabilities. Consider adding mechanisms that allow the AI to
+           explain its decisions or recommendations to human agents.
+      [Adaptive]
+        ✗ Evaluation HI Conformance
+           CARE Adaptive: Feedback mechanism does not appear to involve
+           human actions (no mention of recruiter, human, user, or operator
+           feedback). HI feedback loops should be driven by human signals.
+      [Responsible]
+        ✗ HITeam HI Conformance
+           CARE Responsible (Fairness): No capability found that relates to
+           fairness or bias mitigation. Consider adding fairness-aware
+           processing to prevent discriminatory outcomes.
+
+  ✗ [S8] S8 — Governed Evidence Verification for Corporate and Regulated R&D
+      Status       : FAIL
+      [Collaborative]
+        ✗ HITeam HI Conformance
+           CARE Explainable: No Explainability capability found among agent
+           capabilities. Consider adding mechanisms that allow the AI to
+           explain its decisions or recommendations to human agents.
+        ✗ Collaborative — AI in Interaction
+           CARE Collaborative: Interaction has no Artificial Agent involved.
+           HI requires human-AI interactions.
+      [Adaptive]
+        ✗ Evaluation HI Conformance
+           CARE Adaptive: Feedback mechanism does not appear to involve
+           human actions (no mention of recruiter, human, user, or operator
+           feedback). HI feedback loops should be driven by human signals.
+      [Responsible]
+        ✗ HITeam HI Conformance
+           CARE Responsible (Fairness): No capability found that relates to
+           fairness or bias mitigation. Consider adding fairness-aware
+           processing to prevent discriminatory outcomes.
+
+  ─────────────────────────────────────────────────────────
+  ✗ 8 SCENARIO(S) FAIL HI CONFORMANCE
+    See violations above. Feed this report to Phase 5 (Gap Analysis).
+======================================================================

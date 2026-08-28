@@ -1,0 +1,364 @@
+{
+  "usecase": "leapspace",
+  "phase": "4-shacl-conformance",
+  "timestamp": "2026-08-25T11:17:23.607638+00:00",
+  "kg_file": "/Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/use_cases/leapspace/output/leapspace_kg.ttl",
+  "shapes_file": "/Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/hi_conformance_shapes.ttl",
+  "total_scenarios": 8,
+  "pass": 0,
+  "warning": 0,
+  "fail": 8,
+  "overall_conforms": false,
+  "scenarios": {
+    "s1": {
+      "label": "S1 — Departmental Literature Review Synthesis",
+      "status": "FAIL",
+      "violation_count": 5,
+      "warning_count": 0,
+      "care_gaps": [
+        "Adaptive",
+        "Collaborative",
+        "Responsible"
+      ],
+      "violations": [
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Responsible",
+          "severity": "Violation",
+          "message": "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s1_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Explainable: The HI Characteristics annotation does not mention the Explainable dimension. Ensure the AI can explain its decisions to human agents.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s1_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Explainable: No Explainability capability found among agent capabilities. Consider adding mechanisms that allow the AI to explain its decisions or recommendations to human agents.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s1_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "Evaluation HI Conformance",
+          "care_dim": "Adaptive",
+          "severity": "Violation",
+          "message": "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals.",
+          "focus_node": "http://example.org/hi/leapspace/Evaluation/s1_evaluation",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_Evaluation"
+        },
+        {
+          "component": "Collaborative — AI in Interaction",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions.",
+          "focus_node": "http://example.org/hi/leapspace/Interaction/s1_int01",
+          "source_shape": "nd7b59f12c4dd402589680e15f311b064b15"
+        }
+      ]
+    },
+    "s2": {
+      "label": "S2 — Cross-Domain Onboarding for Unfamiliar Research Areas",
+      "status": "FAIL",
+      "violation_count": 4,
+      "warning_count": 0,
+      "care_gaps": [
+        "Adaptive",
+        "Collaborative",
+        "Responsible"
+      ],
+      "violations": [
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Responsible",
+          "severity": "Violation",
+          "message": "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s2_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Explainable: The HI Characteristics annotation does not mention the Explainable dimension. Ensure the AI can explain its decisions to human agents.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s2_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Responsible",
+          "severity": "Violation",
+          "message": "CARE Responsible: The HI Characteristics annotation does not mention the Responsible dimension. Ensure the system addresses responsibility, fairness, and human control",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s2_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "Evaluation HI Conformance",
+          "care_dim": "Adaptive",
+          "severity": "Violation",
+          "message": "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals.",
+          "focus_node": "http://example.org/hi/leapspace/Evaluation/s2_evaluation",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_Evaluation"
+        }
+      ]
+    },
+    "s3": {
+      "label": "S3 — Multidisciplinary Evidence Synthesis for Sparse or Fragmented Literature",
+      "status": "FAIL",
+      "violation_count": 5,
+      "warning_count": 0,
+      "care_gaps": [
+        "Adaptive",
+        "Collaborative",
+        "Responsible"
+      ],
+      "violations": [
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Responsible",
+          "severity": "Violation",
+          "message": "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s3_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Explainable: No Explainability capability found among agent capabilities. Consider adding mechanisms that allow the AI to explain its decisions or recommendations to human agents.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s3_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "Evaluation HI Conformance",
+          "care_dim": "Adaptive",
+          "severity": "Violation",
+          "message": "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals.",
+          "focus_node": "http://example.org/hi/leapspace/Evaluation/s3_evaluation",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_Evaluation"
+        },
+        {
+          "component": "Collaborative — AI in Interaction",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions.",
+          "focus_node": "http://example.org/hi/leapspace/Interaction/s3_int02",
+          "source_shape": "nd7b59f12c4dd402589680e15f311b064b15"
+        },
+        {
+          "component": "Collaborative — AI in Interaction",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions.",
+          "focus_node": "http://example.org/hi/leapspace/Interaction/s3_int01",
+          "source_shape": "nd7b59f12c4dd402589680e15f311b064b15"
+        }
+      ]
+    },
+    "s4": {
+      "label": "S4 — Evidence-Strength Calibration and Hallucination Mitigation",
+      "status": "FAIL",
+      "violation_count": 1,
+      "warning_count": 0,
+      "care_gaps": [
+        "Responsible"
+      ],
+      "violations": [
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Responsible",
+          "severity": "Violation",
+          "message": "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s4_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        }
+      ]
+    },
+    "s5": {
+      "label": "S5 — Cross-Disciplinary Connection-Finding and Author/Collaborator Search",
+      "status": "FAIL",
+      "violation_count": 4,
+      "warning_count": 0,
+      "care_gaps": [
+        "Adaptive",
+        "Collaborative",
+        "Responsible"
+      ],
+      "violations": [
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Responsible",
+          "severity": "Violation",
+          "message": "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s5_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Explainable: The HI Characteristics annotation does not mention the Explainable dimension. Ensure the AI can explain its decisions to human agents.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s5_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Explainable: No Explainability capability found among agent capabilities. Consider adding mechanisms that allow the AI to explain its decisions or recommendations to human agents.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s5_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "Evaluation HI Conformance",
+          "care_dim": "Adaptive",
+          "severity": "Violation",
+          "message": "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals.",
+          "focus_node": "http://example.org/hi/leapspace/Evaluation/s5_evaluation",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_Evaluation"
+        }
+      ]
+    },
+    "s6": {
+      "label": "S6 — Research-to-Funding Opportunity Matching",
+      "status": "FAIL",
+      "violation_count": 5,
+      "warning_count": 0,
+      "care_gaps": [
+        "Adaptive",
+        "Collaborative",
+        "Responsible"
+      ],
+      "violations": [
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Responsible",
+          "severity": "Violation",
+          "message": "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s6_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Explainable: The HI Characteristics annotation does not mention the Explainable dimension. Ensure the AI can explain its decisions to human agents.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s6_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Explainable: No Explainability capability found among agent capabilities. Consider adding mechanisms that allow the AI to explain its decisions or recommendations to human agents.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s6_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Responsible",
+          "severity": "Violation",
+          "message": "CARE Responsible: The HI Characteristics annotation does not mention the Responsible dimension. Ensure the system addresses responsibility, fairness, and human control",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s6_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "Evaluation HI Conformance",
+          "care_dim": "Adaptive",
+          "severity": "Violation",
+          "message": "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals.",
+          "focus_node": "http://example.org/hi/leapspace/Evaluation/s6_evaluation",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_Evaluation"
+        }
+      ]
+    },
+    "s7": {
+      "label": "S7 — AI-Assisted Argument Testing and Draft Strengthening",
+      "status": "FAIL",
+      "violation_count": 3,
+      "warning_count": 0,
+      "care_gaps": [
+        "Adaptive",
+        "Collaborative",
+        "Responsible"
+      ],
+      "violations": [
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Responsible",
+          "severity": "Violation",
+          "message": "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s7_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Explainable: No Explainability capability found among agent capabilities. Consider adding mechanisms that allow the AI to explain its decisions or recommendations to human agents.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s7_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "Evaluation HI Conformance",
+          "care_dim": "Adaptive",
+          "severity": "Violation",
+          "message": "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals.",
+          "focus_node": "http://example.org/hi/leapspace/Evaluation/s7_evaluation",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_Evaluation"
+        }
+      ]
+    },
+    "s8": {
+      "label": "S8 — Governed Evidence Verification for Corporate and Regulated R&D",
+      "status": "FAIL",
+      "violation_count": 4,
+      "warning_count": 0,
+      "care_gaps": [
+        "Adaptive",
+        "Collaborative",
+        "Responsible"
+      ],
+      "violations": [
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Responsible",
+          "severity": "Violation",
+          "message": "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s8_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "HITeam HI Conformance",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Explainable: No Explainability capability found among agent capabilities. Consider adding mechanisms that allow the AI to explain its decisions or recommendations to human agents.",
+          "focus_node": "http://example.org/hi/leapspace/HITeam/s8_team",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam"
+        },
+        {
+          "component": "Evaluation HI Conformance",
+          "care_dim": "Adaptive",
+          "severity": "Violation",
+          "message": "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals.",
+          "focus_node": "http://example.org/hi/leapspace/Evaluation/s8_evaluation",
+          "source_shape": "file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_Evaluation"
+        },
+        {
+          "component": "Collaborative — AI in Interaction",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions.",
+          "focus_node": "http://example.org/hi/leapspace/Interaction/s8_int03",
+          "source_shape": "nd7b59f12c4dd402589680e15f311b064b15"
+        }
+      ]
+    }
+  }
+}

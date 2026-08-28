@@ -1,0 +1,218 @@
+{
+  "scenarios": {
+    "s1": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The system lacks AI participation in interactions, which means it cannot facilitate joint task execution or shared decision-making."
+      },
+      "Adaptive": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The absence of a human feedback mechanism limits the system's ability to evolve and adapt to user needs."
+      },
+      "Responsible": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The lack of fairness mechanisms in the system risks producing discriminatory outcomes, undermining trust and ethical standards."
+      },
+      "Explainable": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "There is no evidence of explainability capabilities, meaning the system cannot clarify its decisions or recommendations."
+      }
+    },
+    "s2": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The AI system does not provide explanations for its decisions, which hinders effective collaboration and limits its capability to initiate or maintain interactions."
+      },
+      "Adaptive": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The system lacks a feedback mechanism that incorporates human actions, preventing it from adapting or improving based on user interactions."
+      },
+      "Responsible": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The absence of fairness mechanisms in the system indicates a lack of responsible AI practices, resulting in potential biased outcomes."
+      },
+      "Explainable": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "There is no evidence of tailored explanations for users, which limits the system's ability to provide context-specific insights."
+      }
+    },
+    "s3": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The system lacks any AI participation in interactions, which severely limits its collaborative potential as noted in the gap description."
+      },
+      "Adaptive": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The absence of a human feedback mechanism prevents the system from learning and adapting, as highlighted in the gap evidence."
+      },
+      "Responsible": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The system's lack of fairness mechanisms poses a critical risk of biased recommendations, as described in the gap evidence."
+      },
+      "Explainable": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The absence of explainability capabilities undermines users' ability to understand AI outputs, as stated in the gap description."
+      }
+    },
+    "s4": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "There is no evidence of the AI agent initiating collaboration or maintaining a collaborative relationship, indicating a reactive approach."
+      },
+      "Adaptive": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "There is no evidence of the system adapting based on feedback or anticipating human needs, suggesting a reactive behavior."
+      },
+      "Responsible": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The system lacks fairness mechanisms, which is critical for responsible AI, thus limiting its capability to a reactive level."
+      },
+      "Explainable": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "There is no evidence of tailored explanations or interactive dialogue, indicating a fixed and generic approach."
+      }
+    },
+    "s5": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The system's lack of explainability features prevents effective collaboration, limiting it to a reactive level."
+      },
+      "Adaptive": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The absence of human feedback mechanisms restricts the system's ability to adapt, confining it to a reactive state."
+      },
+      "Responsible": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The lack of fairness mechanisms compromises equitable outcomes, resulting in a reactive capability."
+      },
+      "Explainable": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "There is no evidence of tailored explanations, indicating a fixed and generic approach to explainability."
+      }
+    },
+    "s6": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The system's inability to explain its decisions, as highlighted by the critical gap in Explainability, limits its collaborative capabilities to a reactive level."
+      },
+      "Adaptive": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The absence of human feedback mechanisms, as noted in the critical gap, restricts the system's adaptability to a reactive level."
+      },
+      "Responsible": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The lack of fairness mechanisms, identified as a critical gap, confines the system's responsible capabilities to a reactive level."
+      },
+      "Explainable": {
+        "level": 3,
+        "level_label": "Social",
+        "justification": "Although there are no gaps in the Explainable dimension, the maximum admissible level is 3, indicating the potential for social-level explanations."
+      }
+    },
+    "s7": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "There is no evidence of the AI agent initiating collaboration or establishing shared awareness, indicating a reactive capability."
+      },
+      "Adaptive": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The system lacks a feedback mechanism for human actions, preventing it from adapting and limiting it to a reactive state."
+      },
+      "Responsible": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The absence of fairness-aware processing capabilities compromises ethical integrity, resulting in a reactive approach to responsibility."
+      },
+      "Explainable": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The lack of explainability features means the AI cannot clarify its decisions, reflecting a reactive capability in this dimension."
+      }
+    },
+    "s8": {
+      "Collaborative": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The system does not involve any AI participation in interactions, which limits its collaborative capabilities as evidenced by the gap titled 'No AI Participation in Interactions'."
+      },
+      "Adaptive": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The absence of a human feedback mechanism, as noted in the gap titled 'No Human Feedback Mechanism', prevents the system from adapting to user preferences."
+      },
+      "Responsible": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "The lack of fairness mechanisms, highlighted in the gap titled 'Lack of Fairness Mechanisms', indicates that the system does not address critical issues of bias or accountability."
+      },
+      "Explainable": {
+        "level": 1,
+        "level_label": "Reactive",
+        "justification": "There is no evidence of explainability capabilities, as indicated by the gap titled 'Absence of Explainability', which undermines user understanding of AI decisions."
+      }
+    }
+  },
+  "summary": {
+    "Collaborative": {
+      "distribution": {
+        "1": 8,
+        "2": 0,
+        "3": 0
+      },
+      "modal_level": 1,
+      "modal_label": "Reactive"
+    },
+    "Adaptive": {
+      "distribution": {
+        "1": 8,
+        "2": 0,
+        "3": 0
+      },
+      "modal_level": 1,
+      "modal_label": "Reactive"
+    },
+    "Responsible": {
+      "distribution": {
+        "1": 8,
+        "2": 0,
+        "3": 0
+      },
+      "modal_level": 1,
+      "modal_label": "Reactive"
+    },
+    "Explainable": {
+      "distribution": {
+        "1": 7,
+        "2": 0,
+        "3": 1
+      },
+      "modal_level": 1,
+      "modal_label": "Reactive"
+    }
+  }
+}

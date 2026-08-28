@@ -1,0 +1,69 @@
+{
+  "usecase": "ibm",
+  "timestamp": "2026-08-25T11:14:28.987577+00:00",
+  "kg_file": "/Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/use_cases/ibm/output/ibm_kg.ttl",
+  "shapes_file": "/Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase3_normalization/shapes/normalization_shapes.ttl",
+  "total_scenarios": 8,
+  "passed": 8,
+  "failed": 0,
+  "overall_conforms": true,
+  "scenarios": {
+    "s1": {
+      "label": "S1 — Predictive Model Governance & Continuous Monitoring",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s2": {
+      "label": "S2 — RAG Application Quality Evaluation & Promotion-to-Production",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s3": {
+      "label": "S3 — GenAI Use-Case Approval & Regulatory Risk Classification",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s4": {
+      "label": "S4 — Prompt Security Hardening via Automated Red-Teaming",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s5": {
+      "label": "S5 — Multi-Agent (Agentic AI) Governance Across the Lifecycle",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s6": {
+      "label": "S6 — Virtual Assistant Production Quality & Safety Monitoring",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s7": {
+      "label": "S7 — Governed AI-Assisted Candidate Screening and Interview Coordination",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s8": {
+      "label": "S8 — Enterprise Model Risk Governance (MRG) Across Multi-Cloud Third-Party Models",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    }
+  },
+  "unmapped_violations": []
+}

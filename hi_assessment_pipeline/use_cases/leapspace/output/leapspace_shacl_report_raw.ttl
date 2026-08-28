@@ -1,0 +1,366 @@
+@prefix hi: <https://w3id.org/hi-ontology#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s5_team> ;
+            sh:resultMessage "CARE Explainable: The HI Characteristics annotation does not mention the Explainable dimension. Ensure the AI can explain its decisions to human agents." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b10 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s5_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s1_team> ;
+            sh:resultMessage "CARE Explainable: The HI Characteristics annotation does not mention the Explainable dimension. Ensure the AI can explain its decisions to human agents." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b10 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s1_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s6_team> ;
+            sh:resultMessage "CARE Explainable: The HI Characteristics annotation does not mention the Explainable dimension. Ensure the AI can explain its decisions to human agents." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b10 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s6_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s6_team> ;
+            sh:resultMessage "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b11 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s6_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s4_team> ;
+            sh:resultMessage "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b11 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s4_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/Evaluation/s1_evaluation> ;
+            sh:resultMessage "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b24 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_Evaluation> ;
+            sh:value <http://example.org/hi/leapspace/Evaluation/s1_evaluation> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/Evaluation/s5_evaluation> ;
+            sh:resultMessage "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b24 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_Evaluation> ;
+            sh:value <http://example.org/hi/leapspace/Evaluation/s5_evaluation> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/Evaluation/s6_evaluation> ;
+            sh:resultMessage "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b24 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_Evaluation> ;
+            sh:value <http://example.org/hi/leapspace/Evaluation/s6_evaluation> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/Interaction/s8_int03> ;
+            sh:resultMessage "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions." ;
+            sh:resultPath hi:hasAgentInvolved ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:QualifiedMinCountConstraintComponent ;
+            sh:sourceShape _:nd7b59f12c4dd402589680e15f311b064b15 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s8_team> ;
+            sh:resultMessage "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b11 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s8_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s2_team> ;
+            sh:resultMessage "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b11 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s2_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/Interaction/s1_int01> ;
+            sh:resultMessage "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions." ;
+            sh:resultPath hi:hasAgentInvolved ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:QualifiedMinCountConstraintComponent ;
+            sh:sourceShape _:nd7b59f12c4dd402589680e15f311b064b15 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s6_team> ;
+            sh:resultMessage "CARE Responsible: The HI Characteristics annotation does not mention the Responsible dimension. Ensure the system addresses responsibility, fairness, and human control" ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b9 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s6_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s3_team> ;
+            sh:resultMessage "CARE Explainable: No Explainability capability found among agent capabilities. Consider adding mechanisms that allow the AI to explain its decisions or recommendations to human agents." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b12 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s3_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s1_team> ;
+            sh:resultMessage "CARE Explainable: No Explainability capability found among agent capabilities. Consider adding mechanisms that allow the AI to explain its decisions or recommendations to human agents." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b12 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s1_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s5_team> ;
+            sh:resultMessage "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b11 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s5_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s2_team> ;
+            sh:resultMessage "CARE Responsible: The HI Characteristics annotation does not mention the Responsible dimension. Ensure the system addresses responsibility, fairness, and human control" ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b9 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s2_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/Evaluation/s7_evaluation> ;
+            sh:resultMessage "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b24 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_Evaluation> ;
+            sh:value <http://example.org/hi/leapspace/Evaluation/s7_evaluation> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s8_team> ;
+            sh:resultMessage "CARE Explainable: No Explainability capability found among agent capabilities. Consider adding mechanisms that allow the AI to explain its decisions or recommendations to human agents." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b12 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s8_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/Interaction/s3_int02> ;
+            sh:resultMessage "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions." ;
+            sh:resultPath hi:hasAgentInvolved ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:QualifiedMinCountConstraintComponent ;
+            sh:sourceShape _:nd7b59f12c4dd402589680e15f311b064b15 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/Evaluation/s2_evaluation> ;
+            sh:resultMessage "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b24 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_Evaluation> ;
+            sh:value <http://example.org/hi/leapspace/Evaluation/s2_evaluation> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s5_team> ;
+            sh:resultMessage "CARE Explainable: No Explainability capability found among agent capabilities. Consider adding mechanisms that allow the AI to explain its decisions or recommendations to human agents." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b12 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s5_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s7_team> ;
+            sh:resultMessage "CARE Explainable: No Explainability capability found among agent capabilities. Consider adding mechanisms that allow the AI to explain its decisions or recommendations to human agents." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b12 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s7_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s6_team> ;
+            sh:resultMessage "CARE Explainable: No Explainability capability found among agent capabilities. Consider adding mechanisms that allow the AI to explain its decisions or recommendations to human agents." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b12 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s6_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s2_team> ;
+            sh:resultMessage "CARE Explainable: The HI Characteristics annotation does not mention the Explainable dimension. Ensure the AI can explain its decisions to human agents." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b10 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s2_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/Evaluation/s8_evaluation> ;
+            sh:resultMessage "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b24 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_Evaluation> ;
+            sh:value <http://example.org/hi/leapspace/Evaluation/s8_evaluation> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s7_team> ;
+            sh:resultMessage "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b11 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s7_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/Evaluation/s3_evaluation> ;
+            sh:resultMessage "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b24 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_Evaluation> ;
+            sh:value <http://example.org/hi/leapspace/Evaluation/s3_evaluation> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s1_team> ;
+            sh:resultMessage "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b11 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s1_team> ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/Interaction/s3_int01> ;
+            sh:resultMessage "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions." ;
+            sh:resultPath hi:hasAgentInvolved ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:QualifiedMinCountConstraintComponent ;
+            sh:sourceShape _:nd7b59f12c4dd402589680e15f311b064b15 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode <http://example.org/hi/leapspace/HITeam/s3_team> ;
+            sh:resultMessage "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes." ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraint _:nd7b59f12c4dd402589680e15f311b064b11 ;
+            sh:sourceConstraintComponent sh:SPARQLConstraintComponent ;
+            sh:sourceShape <file:///Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/HIConformShape_HITeam> ;
+            sh:value <http://example.org/hi/leapspace/HITeam/s3_team> ] .
+
+_:Nb8406574f2094e0a8353c89e2ae12e29 sh:class hi:ArtificialAgent .
+
+_:nd7b59f12c4dd402589680e15f311b064b9 a sh:SPARQLConstraint ;
+    sh:message "CARE Responsible: The HI Characteristics annotation does not mention the Responsible dimension. Ensure the system addresses responsibility, fairness, and human control" ;
+    sh:name "Responsible — CARE Annotation" ;
+    sh:select """
+            PREFIX meta: <http://example.org/hi/meta/>
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS {
+                    $this meta:careCharacteristics ?care .
+                    FILTER( CONTAINS(LCASE(STR(?care)), "responsible") )
+                }
+            }
+        """ ;
+    sh:severity sh:Violation .
+
+_:nd7b59f12c4dd402589680e15f311b064b10 a sh:SPARQLConstraint ;
+    sh:message "CARE Explainable: The HI Characteristics annotation does not mention the Explainable dimension. Ensure the AI can explain its decisions to human agents." ;
+    sh:name "Explainable — CARE Annotation" ;
+    sh:select """
+            PREFIX meta: <http://example.org/hi/meta/>
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS {
+                    $this meta:careCharacteristics ?care .
+                    FILTER(
+                        CONTAINS(LCASE(STR(?care)), "explainable") ||
+                        CONTAINS(LCASE(STR(?care)), "explainab")
+                    )
+                }
+            }
+        """ ;
+    sh:severity sh:Violation .
+
+_:nd7b59f12c4dd402589680e15f311b064b15 sh:message "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions." ;
+    sh:name "Collaborative — AI in Interaction" ;
+    sh:path hi:hasAgentInvolved ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape _:Nb8406574f2094e0a8353c89e2ae12e29 ;
+    sh:severity sh:Violation .
+
+_:nd7b59f12c4dd402589680e15f311b064b12 a sh:SPARQLConstraint ;
+    sh:message "CARE Explainable: No Explainability capability found among agent capabilities. Consider adding mechanisms that allow the AI to explain its decisions or recommendations to human agents." ;
+    sh:name "Explainable — XAI Capability" ;
+    sh:select """
+            PREFIX hi:   <https://w3id.org/hi-ontology#>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS {
+                    $this hi:hasMember ?agent .
+                    ?agent hi:hasCapability ?cap .
+                    ?cap rdfs:label ?label .
+                    FILTER(
+                        CONTAINS(LCASE(STR(?label)), "explain")    ||
+                        CONTAINS(LCASE(STR(?label)), "xai")        ||
+                        CONTAINS(LCASE(STR(?label)), "transparen") ||
+                        CONTAINS(LCASE(STR(?label)), "interpret")  ||
+                        CONTAINS(LCASE(STR(?label)), "match")      ||
+                        CONTAINS(LCASE(STR(?label)), "insight")
+                    )
+                }
+            }
+        """ ;
+    sh:severity sh:Warning .
+
+_:nd7b59f12c4dd402589680e15f311b064b24 a sh:SPARQLConstraint ;
+    sh:message "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals." ;
+    sh:name "Adaptive — Human-Sourced Feedback" ;
+    sh:select """
+            PREFIX meta: <http://example.org/hi/meta/>
+            SELECT $this
+            WHERE {
+                $this meta:hasFeedbackMechanism ?fb .
+                FILTER NOT EXISTS {
+                    FILTER(
+                        CONTAINS(LCASE(STR(?fb)), "recruiter")   ||
+                        CONTAINS(LCASE(STR(?fb)), "human")       ||
+                        CONTAINS(LCASE(STR(?fb)), "user")        ||
+                        CONTAINS(LCASE(STR(?fb)), "operator")    ||
+                        CONTAINS(LCASE(STR(?fb)), "advance")     ||
+                        CONTAINS(LCASE(STR(?fb)), "archive")     ||
+                        CONTAINS(LCASE(STR(?fb)), "reject")      ||
+                        CONTAINS(LCASE(STR(?fb)), "contact")     ||
+                        CONTAINS(LCASE(STR(?fb)), "manager")
+                    )
+                }
+            }
+        """ ;
+    sh:severity sh:Warning .
+
+_:nd7b59f12c4dd402589680e15f311b064b11 a sh:SPARQLConstraint ;
+    sh:message "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes." ;
+    sh:name "Responsible — Fairness Mechanism" ;
+    sh:select """
+            PREFIX hi:   <https://w3id.org/hi-ontology#>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS {
+                    $this hi:hasMember ?agent .
+                    ?agent hi:hasCapability ?cap .
+                    ?cap rdfs:label ?label .
+                    FILTER(
+                        CONTAINS(LCASE(STR(?label)), "fair")  ||
+                        CONTAINS(LCASE(STR(?label)), "bias")  ||
+                        CONTAINS(LCASE(STR(?label)), "equit") ||
+                        CONTAINS(LCASE(STR(?label)), "representative")
+                    )
+                }
+            }
+        """ ;
+    sh:severity sh:Warning .
+

@@ -1,0 +1,15 @@
+# IBM WATSONX GOVERNANCE USE CASE CONFIGURATION
+
+# Run: python run_pipeline.py --config configs/ibm.yaml
+
+usecase: ibm
+csv_path: use_cases/ibm/extractionsheet.csv
+ontology_path: ontology/hi-ontology.ttl
+output_dir: use_cases/ibm/output
+
+# Phase 1 block enables automated knowledge acquisition via Claude + web search
+# csv_path will be created by Phase 1 and does not need to exist beforehand.
+#phase1:
+#  target_system: "IBM watsonx.governance"
+#  anthropic_model: claude-opus-4-5
+#  max_searches: 60

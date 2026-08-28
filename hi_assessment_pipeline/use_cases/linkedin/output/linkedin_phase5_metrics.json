@@ -1,0 +1,10 @@
+{
+  "scenarios_total": 8,
+  "scenarios_requiring_llm": 4,
+  "llm_fallback_triggered": 0,
+  "llm_fallback_rate": 0.0,
+  "total_prompt_tokens": 3545,
+  "total_completion_tokens": 883,
+  "total_tokens": 4428,
+  "total_gaps": 4
+}

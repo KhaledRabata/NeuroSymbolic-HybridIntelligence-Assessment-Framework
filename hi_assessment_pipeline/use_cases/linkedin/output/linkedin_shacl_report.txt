@@ -1,0 +1,70 @@
+======================================================================
+  HI Conformance Report — LINKEDIN
+  Phase 4: SHACL Conformance Validation
+  Generated: 2026-08-25 13:19:50
+======================================================================
+
+  CARE PRINCIPLES EVALUATED
+  ─────────────────────────────────────────────────────────
+  C — Collaborative : human and AI agents work together
+  A — Adaptive      : feedback loops support learning
+  R — Responsible   : oversight, fairness, accountability
+  E — Explainable   : AI explains decisions to humans
+
+  Scenarios: 8   PASS: 4   WARNING: 0   FAIL: 4
+  ─────────────────────────────────────────────────────────
+
+  ✓ [S1] S1 — AI-Assisted Candidate Sourcing
+      Status       : PASS
+      No HI conformance issues detected.
+
+  ✗ [S2] S2 — AI-Driven Candidate Evaluation
+      Status       : FAIL
+      [Collaborative]
+        ✗ Collaborative — AI in Interaction
+           CARE Collaborative: Interaction has no Artificial Agent involved.
+           HI requires human-AI interactions.
+
+  ✓ [S3] S3 — Automated Prescreening via InMail
+      Status       : PASS
+      No HI conformance issues detected.
+
+  ✗ [S4] S4 — Fairness-Aware Representative Candidate Ranking
+      Status       : FAIL
+      [Collaborative]
+        ✗ Collaborative — AI in Interaction
+           CARE Collaborative: Interaction has no Artificial Agent involved.
+           HI requires human-AI interactions.
+        ✗ Collaborative — AI in Interaction
+           CARE Collaborative: Interaction has no Artificial Agent involved.
+           HI requires human-AI interactions.
+
+  ✓ [S5] S5 — Explainable AI-Assisted Search
+      Status       : PASS
+      No HI conformance issues detected.
+
+  ✗ [S6] S6 — Recruiter-Hiring Manager Collaborative Decision Making
+      Status       : FAIL
+      [Collaborative]
+        ✗ Collaborative — AI in Interaction
+           CARE Collaborative: Interaction has no Artificial Agent involved.
+           HI requires human-AI interactions.
+        ✗ Collaborative — AI in Interaction
+           CARE Collaborative: Interaction has no Artificial Agent involved.
+           HI requires human-AI interactions.
+
+  ✓ [S7] S7 — Long-Term Personalisation via HLTM
+      Status       : PASS
+      No HI conformance issues detected.
+
+  ✗ [S8] S8 — ATS Integration and Unified Applicant Management (RSC+)
+      Status       : FAIL
+      [Collaborative]
+        ✗ Collaborative — Human in Interaction
+           CARE Collaborative: Interaction has no Human Agent involved. HI
+           requires human-AI interactions, not AI-only exchanges.
+
+  ─────────────────────────────────────────────────────────
+  ✗ 4 SCENARIO(S) FAIL HI CONFORMANCE
+    See violations above. Feed this report to Phase 5 (Gap Analysis).
+======================================================================

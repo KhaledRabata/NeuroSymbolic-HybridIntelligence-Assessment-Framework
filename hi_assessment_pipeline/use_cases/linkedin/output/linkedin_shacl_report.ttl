@@ -1,0 +1,138 @@
+{
+  "usecase": "linkedin",
+  "phase": "4-shacl-conformance",
+  "timestamp": "2026-08-25T11:19:50.279943+00:00",
+  "kg_file": "/Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/use_cases/linkedin/output/linkedin_kg.ttl",
+  "shapes_file": "/Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase4_shacl_validation/shapes/hi_conformance_shapes.ttl",
+  "total_scenarios": 8,
+  "pass": 4,
+  "warning": 0,
+  "fail": 4,
+  "overall_conforms": false,
+  "scenarios": {
+    "s1": {
+      "label": "S1 — AI-Assisted Candidate Sourcing",
+      "status": "PASS",
+      "violation_count": 0,
+      "warning_count": 0,
+      "care_gaps": [],
+      "violations": []
+    },
+    "s2": {
+      "label": "S2 — AI-Driven Candidate Evaluation",
+      "status": "FAIL",
+      "violation_count": 1,
+      "warning_count": 0,
+      "care_gaps": [
+        "Collaborative"
+      ],
+      "violations": [
+        {
+          "component": "Collaborative — AI in Interaction",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions.",
+          "focus_node": "http://example.org/hi/linkedin/Interaction/s2_int03",
+          "source_shape": "n12524a3a7b8644cb8594b2b0f849947fb15"
+        }
+      ]
+    },
+    "s3": {
+      "label": "S3 — Automated Prescreening via InMail",
+      "status": "PASS",
+      "violation_count": 0,
+      "warning_count": 0,
+      "care_gaps": [],
+      "violations": []
+    },
+    "s4": {
+      "label": "S4 — Fairness-Aware Representative Candidate Ranking",
+      "status": "FAIL",
+      "violation_count": 2,
+      "warning_count": 0,
+      "care_gaps": [
+        "Collaborative"
+      ],
+      "violations": [
+        {
+          "component": "Collaborative — AI in Interaction",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions.",
+          "focus_node": "http://example.org/hi/linkedin/Interaction/s4_int02",
+          "source_shape": "n12524a3a7b8644cb8594b2b0f849947fb15"
+        },
+        {
+          "component": "Collaborative — AI in Interaction",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions.",
+          "focus_node": "http://example.org/hi/linkedin/Interaction/s4_int01",
+          "source_shape": "n12524a3a7b8644cb8594b2b0f849947fb15"
+        }
+      ]
+    },
+    "s5": {
+      "label": "S5 — Explainable AI-Assisted Search",
+      "status": "PASS",
+      "violation_count": 0,
+      "warning_count": 0,
+      "care_gaps": [],
+      "violations": []
+    },
+    "s6": {
+      "label": "S6 — Recruiter-Hiring Manager Collaborative Decision Making",
+      "status": "FAIL",
+      "violation_count": 2,
+      "warning_count": 0,
+      "care_gaps": [
+        "Collaborative"
+      ],
+      "violations": [
+        {
+          "component": "Collaborative — AI in Interaction",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions.",
+          "focus_node": "http://example.org/hi/linkedin/Interaction/s6_int01",
+          "source_shape": "n12524a3a7b8644cb8594b2b0f849947fb15"
+        },
+        {
+          "component": "Collaborative — AI in Interaction",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions.",
+          "focus_node": "http://example.org/hi/linkedin/Interaction/s6_int03",
+          "source_shape": "n12524a3a7b8644cb8594b2b0f849947fb15"
+        }
+      ]
+    },
+    "s7": {
+      "label": "S7 — Long-Term Personalisation via HLTM",
+      "status": "PASS",
+      "violation_count": 0,
+      "warning_count": 0,
+      "care_gaps": [],
+      "violations": []
+    },
+    "s8": {
+      "label": "S8 — ATS Integration and Unified Applicant Management (RSC+)",
+      "status": "FAIL",
+      "violation_count": 1,
+      "warning_count": 0,
+      "care_gaps": [
+        "Collaborative"
+      ],
+      "violations": [
+        {
+          "component": "Collaborative — Human in Interaction",
+          "care_dim": "Collaborative",
+          "severity": "Violation",
+          "message": "CARE Collaborative: Interaction has no Human Agent involved. HI requires human-AI interactions, not AI-only exchanges.",
+          "focus_node": "http://example.org/hi/linkedin/Interaction/s8_int01",
+          "source_shape": "n12524a3a7b8644cb8594b2b0f849947fb13"
+        }
+      ]
+    }
+  }
+}

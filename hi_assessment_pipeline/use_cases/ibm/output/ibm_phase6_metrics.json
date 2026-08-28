@@ -1,0 +1,11 @@
+{
+  "recommendation_calls": 8,
+  "recommendation_fallbacks": 0,
+  "care_level_calls": 8,
+  "care_level_fallbacks": 0,
+  "executive_summary_fallback": false,
+  "total_llm_fallbacks": 0,
+  "total_prompt_tokens": 17303,
+  "total_completion_tokens": 4963,
+  "total_tokens": 22266
+}

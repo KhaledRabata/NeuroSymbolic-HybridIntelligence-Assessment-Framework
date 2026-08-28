@@ -1,0 +1,283 @@
+{
+  "usecase": "ibm",
+  "phase": "5-gap-analysis",
+  "method": "neuro-symbolic",
+  "llm_model": "gpt-4o-mini",
+  "timestamp": "2026-08-25T11:15:11.147653+00:00",
+  "shacl_report_file": "/Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/use_cases/ibm/output/ibm_shacl_report.ttl",
+  "total_scenarios": 8,
+  "scenarios_with_gaps": 8,
+  "total_gaps": 21,
+  "care_gap_summary": {
+    "Collaborative": 8,
+    "Adaptive": 4,
+    "Responsible": 5,
+    "Explainable": 4,
+    "General": 0
+  },
+  "severity_summary": {
+    "Critical": 20,
+    "Major": 1,
+    "Minor": 0
+  },
+  "scenarios": {
+    "s1": {
+      "scenario_id": "S1",
+      "overall_assessment": "The scenario fails to meet critical HI conformance due to the absence of collaborative interactions and adaptive feedback mechanisms. This significantly undermines the potential for effective human-AI collaboration.",
+      "gaps": [
+        {
+          "gap_id": "G-S1-01",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "Collaborative — AI in Interaction",
+          "gap_title": "Lack of AI Participation in Interactions",
+          "gap_description": "The recorded interactions do not involve any artificial agents, which is a fundamental requirement for human-AI collaboration. Without AI participation, the system cannot facilitate meaningful joint task execution, violating the essence of collaborative intelligence.",
+          "hi_principle_violated": "CARE Collaborative",
+          "practical_impact": "This absence prevents any collaborative decision-making or task execution, severely limiting the effectiveness and utility of the AI system in real-world applications."
+        },
+        {
+          "gap_id": "G-S1-02",
+          "care_dimension": "Adaptive",
+          "severity": "Critical",
+          "component": "Evaluation HI Conformance",
+          "gap_title": "Absence of Human Feedback Mechanism",
+          "gap_description": "The evaluation process lacks any mention of human feedback, which is essential for adaptive learning in HI systems. Without human signals to inform model updates, the system cannot learn from past interactions, leading to stagnation and reduced performance over time.",
+          "hi_principle_violated": "CARE Adaptive",
+          "practical_impact": "The inability to incorporate human feedback hampers the system's capacity to improve and adapt, resulting in a static model that fails to meet evolving user needs and contexts."
+        }
+      ]
+    },
+    "s2": {
+      "scenario_id": "S2",
+      "overall_assessment": "The scenario lacks essential human-AI collaboration and feedback mechanisms. Critical gaps in collaboration and responsibility hinder effective human-AI interaction.",
+      "gaps": [
+        {
+          "gap_id": "G-S2-01",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "Collaborative — AI in Interaction",
+          "gap_title": "Absence of AI in Interaction",
+          "gap_description": "The recorded human-AI interaction episodes do not involve any artificial agent, which is a fundamental requirement for collaborative systems. Without AI participation, the essence of human-AI collaboration is entirely missing, rendering the system incapable of fulfilling its intended purpose.",
+          "hi_principle_violated": "CARE Collaborative",
+          "practical_impact": "This absence prevents any meaningful collaboration, leading to ineffective task execution and decision-making processes."
+        },
+        {
+          "gap_id": "G-S2-02",
+          "care_dimension": "Adaptive",
+          "severity": "Critical",
+          "component": "Evaluation HI Conformance",
+          "gap_title": "Lack of Human Feedback Mechanism",
+          "gap_description": "The evaluation process lacks a feedback mechanism that incorporates human actions, which is essential for adaptive learning. Without human signals to inform model updates, the system cannot learn from past interactions, limiting its ability to improve over time.",
+          "hi_principle_violated": "CARE Adaptive",
+          "practical_impact": "This gap results in a static system that does not evolve based on user needs or preferences, reducing its effectiveness and relevance in real-world applications."
+        },
+        {
+          "gap_id": "G-S2-03",
+          "care_dimension": "Responsible",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Absence of Fairness Mechanisms",
+          "gap_description": "The system lacks any capabilities related to fairness or bias mitigation, which are crucial for responsible AI design. Without these mechanisms, the system risks producing discriminatory outcomes, undermining trust and accountability.",
+          "hi_principle_violated": "CARE Responsible",
+          "practical_impact": "The absence of fairness considerations can lead to biased decision-making, harming users and stakeholders and potentially resulting in legal and ethical repercussions."
+        }
+      ]
+    },
+    "s3": {
+      "scenario_id": "S3",
+      "overall_assessment": "The ibm AI system fails to meet essential HI principles, particularly in collaboration and responsibility. Key components for human-AI interaction and fairness are entirely absent.",
+      "gaps": [
+        {
+          "gap_id": "G-S3-01",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "Collaborative — AI in Interaction",
+          "gap_title": "Absence of AI in Interaction",
+          "gap_description": "The system lacks an Artificial Agent in recorded human-AI interactions, which is fundamental for collaboration. Without AI participation, the essence of hybrid intelligence is compromised, as human and AI cannot co-participate in tasks.",
+          "hi_principle_violated": "CARE Collaborative",
+          "practical_impact": "This absence severely limits the potential for effective teamwork between humans and AI, undermining the system's ability to leverage AI capabilities in decision-making."
+        },
+        {
+          "gap_id": "G-S3-02",
+          "care_dimension": "Responsible",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Lack of Fairness Mechanisms",
+          "gap_description": "The system does not incorporate any fairness or bias mitigation capabilities, which are essential for responsible AI deployment. This gap raises concerns about potential discriminatory outcomes, violating the principle of accountability.",
+          "hi_principle_violated": "CARE Responsible",
+          "practical_impact": "Without fairness mechanisms, the system risks perpetuating biases in decision-making, which can lead to unfair treatment of individuals or groups in real-world applications."
+        },
+        {
+          "gap_id": "G-S3-03",
+          "care_dimension": "Explainable",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "No Explainability Capabilities",
+          "gap_description": "The absence of explainability mechanisms means that the AI cannot clarify its decisions or recommendations to human agents. This lack of transparency is critical for trust and understanding in human-AI interactions.",
+          "hi_principle_violated": "CARE Explainable",
+          "practical_impact": "Without the ability to explain its reasoning, the AI's outputs may be viewed as opaque, leading to mistrust and reluctance from humans to engage with the system effectively."
+        }
+      ]
+    },
+    "s4": {
+      "scenario_id": "S4",
+      "overall_assessment": "The ibm AI system fails to meet critical HI conformance requirements, particularly in collaboration and responsibility. Key elements such as explainability and fairness mechanisms are entirely absent.",
+      "gaps": [
+        {
+          "gap_id": "G-S4-01",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Lack of Explainability Mechanisms",
+          "gap_description": "The system lacks the capability to explain its decisions to human agents, which is essential for effective collaboration. Without explainability, human agents cannot understand or trust the AI's recommendations, undermining the collaborative nature of the human-AI team.",
+          "hi_principle_violated": "Explainable",
+          "practical_impact": "This absence severely limits the ability of human agents to engage with the AI, reducing the overall effectiveness and trust in the collaboration."
+        },
+        {
+          "gap_id": "G-S4-02",
+          "care_dimension": "Responsible",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Absence of Fairness Mechanisms",
+          "gap_description": "The system does not incorporate any fairness or bias mitigation capabilities, which are crucial for responsible AI deployment. This lack of fairness mechanisms can lead to discriminatory outcomes, which not only violate ethical standards but also erode trust in the AI system.",
+          "hi_principle_violated": "Responsible",
+          "practical_impact": "Without fairness considerations, the AI's decisions may disproportionately affect certain groups, leading to significant ethical and operational risks in real-world applications."
+        }
+      ]
+    },
+    "s5": {
+      "scenario_id": "S5",
+      "overall_assessment": "The ibm AI system fails to meet critical HI conformance requirements, lacking essential collaborative and responsible features. Key capabilities for human-AI interaction and fairness are entirely absent.",
+      "gaps": [
+        {
+          "gap_id": "G-S5-01",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "Collaborative — AI in Interaction",
+          "gap_title": "Missing AI Participation in Interactions",
+          "gap_description": "The system lacks any artificial agent involvement in recorded human-AI interactions, which is fundamental for collaboration. Without AI participation, the essence of hybrid intelligence is lost, as there can be no joint decision-making or task execution.",
+          "hi_principle_violated": "CARE Collaborative",
+          "practical_impact": "This absence severely undermines the potential for effective teamwork between humans and AI, leading to isolated decision-making and reduced overall system efficacy."
+        },
+        {
+          "gap_id": "G-S5-02",
+          "care_dimension": "Responsible",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Lack of Fairness Mechanisms",
+          "gap_description": "The system does not incorporate any capabilities related to fairness or bias mitigation, which are essential for responsible AI governance. This gap poses significant risks of discriminatory outcomes, undermining trust and accountability in AI decisions.",
+          "hi_principle_violated": "CARE Responsible",
+          "practical_impact": "Without fairness mechanisms, the AI system could perpetuate biases, leading to unfair treatment of individuals and eroding user confidence in the technology."
+        },
+        {
+          "gap_id": "G-S5-03",
+          "care_dimension": "Explainable",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Absence of Explainability Features",
+          "gap_description": "The lack of explainability capabilities means that the AI cannot clarify its decisions or recommendations to human agents. This absence is critical as it prevents users from understanding the rationale behind AI outputs, which is essential for informed decision-making.",
+          "hi_principle_violated": "CARE Explainable",
+          "practical_impact": "Without explainability, users may distrust AI outputs, leading to reluctance in collaboration and reduced effectiveness of the human-AI partnership."
+        }
+      ]
+    },
+    "s6": {
+      "scenario_id": "S6",
+      "overall_assessment": "The scenario fails to meet essential HI conformance requirements, particularly in collaboration and responsibility. Key elements such as human-AI interaction and fairness mechanisms are entirely absent.",
+      "gaps": [
+        {
+          "gap_id": "G-S6-01",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "Collaborative — AI in Interaction",
+          "gap_title": "Lack of AI Participation in Interaction",
+          "gap_description": "The interaction episodes recorded do not involve any artificial agent, which is a fundamental requirement for human-AI collaboration. Without AI participation, the system cannot facilitate joint task execution or shared decision-making, undermining the collaborative nature of HI.",
+          "hi_principle_violated": "CARE Collaborative",
+          "practical_impact": "This absence severely limits the potential for effective teamwork between humans and AI, resulting in a system that cannot leverage AI capabilities to enhance human performance."
+        },
+        {
+          "gap_id": "G-S6-02",
+          "care_dimension": "Adaptive",
+          "severity": "Critical",
+          "component": "Evaluation HI Conformance",
+          "gap_title": "Missing Human Feedback Mechanism",
+          "gap_description": "The feedback mechanism lacks any involvement of human actions, which is crucial for adaptive learning in HI systems. Without human input, the AI cannot refine its models or improve its performance based on real-world interactions.",
+          "hi_principle_violated": "CARE Adaptive",
+          "practical_impact": "This gap prevents the system from evolving and adapting to user needs, leading to stagnation in performance and reduced effectiveness over time."
+        },
+        {
+          "gap_id": "G-S6-03",
+          "care_dimension": "Explainable",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "Absence of Explainability Mechanisms",
+          "gap_description": "The human-AI team lacks any capability for explainability, which is essential for transparency in decision-making. Without the ability to explain its decisions, the AI cannot build trust or facilitate informed human actions.",
+          "hi_principle_violated": "CARE Explainable",
+          "practical_impact": "This lack of explainability can lead to misunderstandings and mistrust in AI recommendations, ultimately hindering effective collaboration and decision-making."
+        },
+        {
+          "gap_id": "G-S6-04",
+          "care_dimension": "Responsible",
+          "severity": "Critical",
+          "component": "HITeam HI Conformance",
+          "gap_title": "No Fairness or Bias Mitigation",
+          "gap_description": "The system does not incorporate any fairness or bias mitigation capabilities, which are critical for responsible AI deployment. This absence raises concerns about discriminatory outcomes and ethical implications of AI decisions.",
+          "hi_principle_violated": "CARE Responsible",
+          "practical_impact": "Without fairness mechanisms, the system risks perpetuating biases, which can lead to harmful consequences for users and undermine the integrity of the AI system."
+        }
+      ]
+    },
+    "s7": {
+      "scenario_id": "S7",
+      "overall_assessment": "The scenario lacks essential collaborative and adaptive elements, severely impacting its HI conformance. Key interactions and feedback mechanisms are missing, which undermines effective human-AI collaboration.",
+      "gaps": [
+        {
+          "gap_id": "G-S7-01",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "Collaborative — AI in Interaction",
+          "gap_title": "Absence of AI in Interactions",
+          "gap_description": "The recorded human-AI interaction episodes do not involve any artificial agent, which is a fundamental requirement for HI. This absence prevents any collaborative efforts between humans and AI, rendering the system incapable of fulfilling its intended purpose.",
+          "hi_principle_violated": "CARE Collaborative",
+          "practical_impact": "Without AI participation, the system cannot facilitate joint decision-making or support human agents effectively, leading to a breakdown in collaboration quality."
+        },
+        {
+          "gap_id": "G-S7-02",
+          "care_dimension": "Adaptive",
+          "severity": "Critical",
+          "component": "Evaluation HI Conformance",
+          "gap_title": "Lack of Human Feedback Mechanism",
+          "gap_description": "The system lacks a feedback mechanism that incorporates human actions, such as input from recruiters or users. This absence means the AI cannot learn or adapt based on human interactions, which is essential for improving performance over time.",
+          "hi_principle_violated": "CARE Adaptive",
+          "practical_impact": "Without human-driven feedback loops, the AI's ability to evolve and reduce cognitive burden on users is severely compromised, leading to stagnation in its effectiveness."
+        },
+        {
+          "gap_id": "G-S7-03",
+          "care_dimension": "Explainable",
+          "severity": "Major",
+          "component": "HITeam HI Conformance",
+          "gap_title": "No Explainability Mechanisms",
+          "gap_description": "The AI system lacks capabilities to explain its decisions or recommendations to human agents. This gap in explainability hinders users' understanding of AI outputs, which is crucial for trust and accountability in human-AI interactions.",
+          "hi_principle_violated": "CARE Explainable",
+          "practical_impact": "Without explainability, users may struggle to verify AI outputs, leading to potential misinterpretations and a lack of confidence in the AI's recommendations."
+        }
+      ]
+    },
+    "s8": {
+      "scenario_id": "S8",
+      "overall_assessment": "The scenario fails to meet HI conformance due to the absence of AI participation in interactions, which undermines collaborative efforts. This lack of AI involvement critically impacts the system's ability to function as a hybrid intelligence.",
+      "gaps": [
+        {
+          "gap_id": "G-S8-01",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "Collaborative — AI in Interaction",
+          "gap_title": "Absence of AI in Human-AI Interactions",
+          "gap_description": "The recorded human-AI interaction episodes lack any involvement of an Artificial Agent, which is a fundamental requirement for hybrid intelligence. This absence means that the system cannot facilitate true collaboration between humans and AI, rendering it ineffective in its intended purpose.",
+          "hi_principle_violated": "Collaborative",
+          "practical_impact": "Without AI participation, the system fails to leverage the strengths of both human and AI agents, leading to ineffective decision-making and reduced overall performance in model risk governance."
+        }
+      ]
+    }
+  }
+}

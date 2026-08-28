@@ -1,0 +1,319 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix hi:   <https://w3id.org/hi-ontology#> .
+@prefix meta: <http://example.org/hi/meta/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+
+# HI Conformance Shapes: Phase 4
+# Validates that the Knowledge Graph satisfies the CARE principles of Hybrid
+# Intelligence:
+#
+#   Collaborative   human and AI agents work together toward a shared goal
+#   Adaptive        the system learns and adapts through feedback
+#   Responsible     human oversight, fairness, and accountability are present
+#   Explainable     the AI can explain its behaviour to human agents
+#
+# These shapes check SEMANTIC CORRECTNESS, whether the HI properties are
+# meaningfully present and correctly structured, going beyond the structural
+# completeness verified in Phase 3
+#
+# Severity levels used:
+#   sh:Violation  a required HI property is absent (hard fail)
+#   sh:Warning    an HI property is weak or implicit (soft flag)
+#
+# Shapes defined:
+#   HIConformShape_HITeam          CARE dimensions, shared goal, composition
+#   HIConformShape_Interaction     human-AI interaction structure
+#   HIConformShape_TaskExecution   human oversight and accountability
+#   HIConformShape_Evaluation      feedback, decision points, metrics
+#   HIConformShape_Task            capability linkage
+
+
+
+# HITeam
+
+<HIConformShape_HITeam> a sh:NodeShape ;
+    sh:targetClass hi:HITeam ;
+    sh:name "HITeam HI Conformance" ;
+    sh:description "Checks CARE properties at the team level." ;
+
+    # Collaborative
+
+    sh:property [
+        sh:path                 hi:hasMember ;
+        sh:qualifiedMinCount    1 ;
+        sh:qualifiedValueShape  [ sh:class hi:HumanAgent ] ;
+        sh:name                 "Collaborative: Human Agent" ;
+        sh:message              "CARE Collaborative: HITeam has no Human Agent. Genuine collaboration requires at least one human participant." ;
+        sh:severity             sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path                 hi:hasMember ;
+        sh:qualifiedMinCount    1 ;
+        sh:qualifiedValueShape  [ sh:class hi:ArtificialAgent ] ;
+        sh:name                 "Collaborative: Artificial Agent" ;
+        sh:message              "CARE Collaborative: HITeam has no Artificial Agent. Genuine HI requires at least one AI component." ;
+        sh:severity             sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path     hi:hasGoal ;
+        sh:minCount 1 ;
+        sh:name     "Collaborative: Shared Goal" ;
+        sh:message  "CARE Collaborative: HITeam has no shared Goal. Hybrid Intelligence requires human and AI agents to pursue a common goal." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Adaptive
+
+    sh:property [
+        sh:path     ( hi:hasMember hi:hasCapability ) ;
+        sh:minCount 1 ;
+        sh:name     "Adaptive: Capabilities" ;
+        sh:message  "CARE Adaptive: HITeam has no Capabilities. HI systems must have defined capabilities that can adapt to context." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Responsible: CARE annotation must mention 'Responsible'
+
+    sh:sparql [
+        a           sh:SPARQLConstraint ;
+        sh:name     "Responsible: CARE Annotation" ;
+        sh:message  "CARE Responsible: The HI Characteristics annotation does not mention the Responsible dimension. Ensure the system addresses responsibility, fairness, and human control" ;
+        sh:severity sh:Violation ;
+        sh:select   """
+            PREFIX meta: <http://example.org/hi/meta/>
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS {
+                    $this meta:careCharacteristics ?care .
+                    FILTER( CONTAINS(LCASE(STR(?care)), "responsible") )
+                }
+            }
+        """ ;
+    ] ;
+
+    # Explainable: CARE annotation must mention 'Explainable'
+
+    sh:sparql [
+        a           sh:SPARQLConstraint ;
+        sh:name     "Explainable: CARE Annotation" ;
+        sh:message  "CARE Explainable: The HI Characteristics annotation does not mention the Explainable dimension. Ensure the AI can explain its decisions to human agents." ;
+        sh:severity sh:Violation ;
+        sh:select   """
+            PREFIX meta: <http://example.org/hi/meta/>
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS {
+                    $this meta:careCharacteristics ?care .
+                    FILTER(
+                        CONTAINS(LCASE(STR(?care)), "explainable") ||
+                        CONTAINS(LCASE(STR(?care)), "explainab")
+                    )
+                }
+            }
+        """ ;
+    ] ;
+
+    # Responsible: Fairness (Warning if no fairness-related capability)
+
+    sh:sparql [
+        a           sh:SPARQLConstraint ;
+        sh:name     "Responsible: Fairness Mechanism" ;
+        sh:message  "CARE Responsible (Fairness): No capability found that relates to fairness or bias mitigation. Consider adding fairness-aware processing to prevent discriminatory outcomes." ;
+        sh:severity sh:Warning ;
+        sh:select   """
+            PREFIX hi:   <https://w3id.org/hi-ontology#>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS {
+                    $this hi:hasMember ?agent .
+                    ?agent hi:hasCapability ?cap .
+                    ?cap rdfs:label ?label .
+                    FILTER(
+                        CONTAINS(LCASE(STR(?label)), "fair")  ||
+                        CONTAINS(LCASE(STR(?label)), "bias")  ||
+                        CONTAINS(LCASE(STR(?label)), "equit") ||
+                        CONTAINS(LCASE(STR(?label)), "representative")
+                    )
+                }
+            }
+        """ ;
+    ] ;
+
+    # Explainable: XAI Capability (Warning if no explicit XAI capability)
+
+    sh:sparql [
+        a           sh:SPARQLConstraint ;
+        sh:name     "Explainable: XAI Capability" ;
+        sh:message  "CARE Explainable: No Explainability capability found among agent capabilities. Consider adding mechanisms that allow the AI to explain its decisions or recommendations to human agents." ;
+        sh:severity sh:Warning ;
+        sh:select   """
+            PREFIX hi:   <https://w3id.org/hi-ontology#>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS {
+                    $this hi:hasMember ?agent .
+                    ?agent hi:hasCapability ?cap .
+                    ?cap rdfs:label ?label .
+                    FILTER(
+                        CONTAINS(LCASE(STR(?label)), "explain")    ||
+                        CONTAINS(LCASE(STR(?label)), "xai")        ||
+                        CONTAINS(LCASE(STR(?label)), "transparen") ||
+                        CONTAINS(LCASE(STR(?label)), "interpret")  ||
+                        CONTAINS(LCASE(STR(?label)), "match")      ||
+                        CONTAINS(LCASE(STR(?label)), "insight")
+                    )
+                }
+            }
+        """ ;
+    ] .
+
+
+# Interaction
+
+<HIConformShape_Interaction> a sh:NodeShape ;
+    sh:targetClass hi:Interaction ;
+    sh:name "Interaction HI Conformance" ;
+    sh:description "Every interaction must involve at least one Human Agent and one Artificial Agent, confirming genuine human-AI collaboration." ;
+
+    # At least one Human Agent involved
+    sh:property [
+        sh:path                 hi:hasAgentInvolved ;
+        sh:qualifiedMinCount    1 ;
+        sh:qualifiedValueShape  [ sh:class hi:HumanAgent ] ;
+        sh:name                 "Collaborative: Human in Interaction" ;
+        sh:message              "CARE Collaborative: Interaction has no Human Agent involved. HI requires human-AI interactions, not AI-only exchanges." ;
+        sh:severity             sh:Violation ;
+    ] ;
+
+    # At least one Artificial Agent involved
+    sh:property [
+        sh:path                 hi:hasAgentInvolved ;
+        sh:qualifiedMinCount    1 ;
+        sh:qualifiedValueShape  [ sh:class hi:ArtificialAgent ] ;
+        sh:name                 "Collaborative: AI in Interaction" ;
+        sh:message              "CARE Collaborative: Interaction has no Artificial Agent involved. HI requires human-AI interactions." ;
+        sh:severity             sh:Violation ;
+    ] .
+
+
+# TaskExecution
+
+<HIConformShape_TaskExecution> a sh:NodeShape ;
+    sh:targetClass hi:TaskExecution ;
+    sh:name "TaskExecution HI Conformance" ;
+    sh:description "Checks human oversight (Responsible) and accountability (Responsible) at the execution level." ;
+
+    # Responsible: Human Oversight: a human must perform the execution
+    sh:property [
+        sh:path                 hi:performedBy ;
+        sh:qualifiedMinCount    1 ;
+        sh:qualifiedValueShape  [ sh:class hi:HumanAgent ] ;
+        sh:name                 "Responsible: Human Oversight" ;
+        sh:message              "CARE Responsible: TaskExecution has no Human Agent performer. HI requires human oversight, humans must be involved in task execution, not just AI." ;
+        sh:severity             sh:Violation ;
+    ] ;
+
+    # Accountable: execution must be evaluated
+    sh:property [
+        sh:path     hi:evaluatedBy ;
+        sh:minCount 1 ;
+        sh:name     "Responsible: Accountability via Evaluation" ;
+        sh:message  "CARE Responsible: TaskExecution has no associated Evaluation. Accountability in HI requires that task executions are measured and assessed." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Collaborative: execution must involve interactions
+    sh:property [
+        sh:path     hi:hasInteractionEpisode ;
+        sh:minCount 1 ;
+        sh:name     "Collaborative: Interaction in Execution" ;
+        sh:message  "CARE Collaborative: TaskExecution has no Interaction episodes. HI requires human-AI interactions during execution." ;
+        sh:severity sh:Violation ;
+    ] .
+
+
+# Evaluation
+
+<HIConformShape_Evaluation> a sh:NodeShape ;
+    sh:targetClass hi:Evaluation ;
+    sh:name "Evaluation HI Conformance" ;
+    sh:description "Checks Adaptive (feedback), Responsible (decision points), and measurement (metrics) properties." ;
+
+    # Adaptive: Feedback mechanism must be present
+    sh:property [
+        sh:path     meta:hasFeedbackMechanism ;
+        sh:minCount 1 ;
+        sh:name     "Adaptive: Human Feedback" ;
+        sh:message  "CARE Adaptive: Evaluation has no Feedback Mechanism. HI systems must support feedback loops that allow the system to adapt based on human input." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Responsible: Human decision points must be present
+    sh:property [
+        sh:path     meta:hasDecisionPoint ;
+        sh:minCount 1 ;
+        sh:name     "Responsible: Human Decision Points" ;
+        sh:message  "CARE Responsible: Evaluation has no Decision Points. HI requires explicit human decision points where humans exercise oversight and control." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Measurability: at least one evaluation metric
+    sh:property [
+        sh:path     hi:hasMetricConcept ;
+        sh:minCount 1 ;
+        sh:name     "Evaluation: Measurable Metrics" ;
+        sh:message  "Evaluation has no Metrics. HI assessment requires measurable criteria to evaluate system performance." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Responsible: check that feedback mentions human actions (Warning)
+    sh:sparql [
+        a           sh:SPARQLConstraint ;
+        sh:name     "Adaptive: Human-Sourced Feedback" ;
+        sh:message  "CARE Adaptive: Feedback mechanism does not appear to involve human actions (no mention of recruiter, human, user, or operator feedback). HI feedback loops should be driven by human signals." ;
+        sh:severity sh:Warning ;
+        sh:select   """
+            PREFIX meta: <http://example.org/hi/meta/>
+            SELECT $this
+            WHERE {
+                $this meta:hasFeedbackMechanism ?fb .
+                FILTER NOT EXISTS {
+                    FILTER(
+                        CONTAINS(LCASE(STR(?fb)), "recruiter")   ||
+                        CONTAINS(LCASE(STR(?fb)), "human")       ||
+                        CONTAINS(LCASE(STR(?fb)), "user")        ||
+                        CONTAINS(LCASE(STR(?fb)), "operator")    ||
+                        CONTAINS(LCASE(STR(?fb)), "advance")     ||
+                        CONTAINS(LCASE(STR(?fb)), "archive")     ||
+                        CONTAINS(LCASE(STR(?fb)), "reject")      ||
+                        CONTAINS(LCASE(STR(?fb)), "contact")     ||
+                        CONTAINS(LCASE(STR(?fb)), "manager")
+                    )
+                }
+            }
+        """ ;
+    ] .
+
+
+# Task
+
+<HIConformShape_Task> a sh:NodeShape ;
+    sh:targetClass hi:Task ;
+    sh:name "Task HI Conformance" ;
+    sh:description "Every task must be linked to at least one capability: confirming that agent skills are mapped to their activities." ;
+
+    sh:property [
+        sh:path     hi:requiresCapability ;
+        sh:minCount 1 ;
+        sh:name     "Task: Required Capability" ;
+        sh:message  "Task has no required Capability (hi:requiresCapability). Every task must be grounded in agent capabilities for the HI system to be coherent." ;
+        sh:severity sh:Violation ;
+    ] .
+

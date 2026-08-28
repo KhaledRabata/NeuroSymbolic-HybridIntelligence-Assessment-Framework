@@ -1,0 +1,70 @@
+{
+  "usecase": "ibm",
+  "phases": {
+    "2": {
+      "runtime_sec": 0.09534597396850586,
+      "build_runtime_sec": 0.09464812278747559,
+      "total_triples": 1646,
+      "usecases": 8,
+      "hiteams": 8,
+      "human_agents": 27,
+      "ai_agents": 24,
+      "goals": 8,
+      "human_tasks": 31,
+      "ai_tasks": 31,
+      "capabilities": 17,
+      "contexts": 8,
+      "interactions": 17,
+      "evaluations": 8,
+      "metrics": 51
+    },
+    "3": {
+      "runtime_sec": 0.2598228454589844,
+      "kg_triples": 1646,
+      "shapes_triples": 138,
+      "total_scenarios": 8,
+      "passed": 8,
+      "failed": 0,
+      "shacl_results_total": 0,
+      "unmapped_results": 0,
+      "overall_conforms": true
+    },
+    "4": {
+      "runtime_sec": 1.0398027896881104,
+      "kg_triples": 1646,
+      "shapes_triples": 144,
+      "ontology_triples": 341,
+      "total_scenarios": 8,
+      "pass": 0,
+      "warning": 0,
+      "fail": 8,
+      "shacl_results_total": 30,
+      "unmapped_results": 0,
+      "overall_conforms": false
+    },
+    "5": {
+      "runtime_sec": 41.12491488456726,
+      "scenarios_total": 8,
+      "scenarios_requiring_llm": 8,
+      "llm_fallback_triggered": 0,
+      "llm_fallback_rate": 0.0,
+      "total_prompt_tokens": 8801,
+      "total_completion_tokens": 3715,
+      "total_tokens": 12516,
+      "total_gaps": 21
+    },
+    "6": {
+      "runtime_sec": 59.78762984275818,
+      "recommendation_calls": 8,
+      "recommendation_fallbacks": 0,
+      "care_level_calls": 8,
+      "care_level_fallbacks": 0,
+      "executive_summary_fallback": false,
+      "total_llm_fallbacks": 0,
+      "total_prompt_tokens": 17303,
+      "total_completion_tokens": 4963,
+      "total_tokens": 22266
+    }
+  },
+  "total_runtime_sec": 102.30751633644104
+}

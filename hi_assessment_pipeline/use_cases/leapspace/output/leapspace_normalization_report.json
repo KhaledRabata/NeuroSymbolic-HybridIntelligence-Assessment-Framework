@@ -1,0 +1,69 @@
+{
+  "usecase": "leapspace",
+  "timestamp": "2026-08-25T11:17:22.683306+00:00",
+  "kg_file": "/Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/use_cases/leapspace/output/leapspace_kg.ttl",
+  "shapes_file": "/Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/pipeline/phase3_normalization/shapes/normalization_shapes.ttl",
+  "total_scenarios": 8,
+  "passed": 8,
+  "failed": 0,
+  "overall_conforms": true,
+  "scenarios": {
+    "s1": {
+      "label": "S1 — Departmental Literature Review Synthesis",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s2": {
+      "label": "S2 — Cross-Domain Onboarding for Unfamiliar Research Areas",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s3": {
+      "label": "S3 — Multidisciplinary Evidence Synthesis for Sparse or Fragmented Literature",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s4": {
+      "label": "S4 — Evidence-Strength Calibration and Hallucination Mitigation",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s5": {
+      "label": "S5 — Cross-Disciplinary Connection-Finding and Author/Collaborator Search",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s6": {
+      "label": "S6 — Research-to-Funding Opportunity Matching",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s7": {
+      "label": "S7 — AI-Assisted Argument Testing and Draft Strengthening",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    },
+    "s8": {
+      "label": "S8 — Governed Evidence Verification for Corporate and Regulated R&D",
+      "status": "PASS",
+      "violation_count": 0,
+      "missing_components": [],
+      "violations": []
+    }
+  },
+  "unmapped_violations": []
+}

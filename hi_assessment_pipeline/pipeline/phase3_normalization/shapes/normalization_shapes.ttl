@@ -1,0 +1,218 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix hi:   <https://w3id.org/hi-ontology#> .
+@prefix meta: <http://example.org/hi/meta/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+# HI Scenario Normalization Shapes
+
+# Defines the standardized structural template that every HI scenario must
+# satisfy. Each shape targets a specific class in the KG and checks that all
+# required components are present.
+
+# These shapes check STRUCTURAL COMPLETENESS only. Whether all required
+# components exist in the graph. Semantic HI correctness (CARE principles,
+# human oversight, fairness, etc.) is checked separately in Phase 4.
+#
+# Shapes defined here:
+#   NormShape_UseCase         scenario label, evidence IDs, HI team link
+#   NormShape_HITeam          goal, context, CARE annotation, human+AI members,
+#                              capabilities
+#   NormShape_Goal            label, at least 2 tasks (human + AI)
+#   NormShape_TaskExecution   evaluation, interaction, inputs, outputs
+#   NormShape_Evaluation      metrics, decision points, feedback mechanisms
+
+
+
+# UseCase
+# Checks the top-level scenario node
+
+<NormShape_UseCase> a sh:NodeShape ;
+    sh:targetClass hi:UseCase ;
+    sh:name "UseCase Normalization" ;
+    sh:description "Every hi:UseCase must have a name, evidence IDs, and an HI team." ;
+
+    sh:property [
+        sh:path     rdfs:label ;
+        sh:minCount 1 ;
+        sh:name     "Scenario Name" ;
+        sh:message  "Scenario is missing a name (rdfs:label)." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path     meta:evidenceIDs ;
+        sh:minCount 1 ;
+        sh:name     "Evidence IDs" ;
+        sh:message  "Scenario is missing Evidence IDs (meta:evidenceIDs)." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path     hi:hasHITeam ;
+        sh:minCount 1 ;
+        sh:name     "HI Team" ;
+        sh:message  "Scenario has no HI Team (hi:hasHITeam)." ;
+        sh:severity sh:Violation ;
+    ] .
+
+
+# HITeam
+# Checks the team composition and structural links
+
+<NormShape_HITeam> a sh:NodeShape ;
+    sh:targetClass hi:HITeam ;
+    sh:name "HITeam Normalization" ;
+    sh:description "Every hi:HITeam must have a goal, context, CARE annotation, at least one human agent, at least one AI agent, and at least one capability." ;
+
+    sh:property [
+        sh:path     hi:hasGoal ;
+        sh:minCount 1 ;
+        sh:name     "Goal" ;
+        sh:message  "HI Team has no Goal (hi:hasGoal)." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path     hi:isInfluencedBy ;
+        sh:minCount 1 ;
+        sh:name     "Context" ;
+        sh:message  "HI Team has no associated Context (hi:isInfluencedBy)." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path     meta:careCharacteristics ;
+        sh:minCount 1 ;
+        sh:name     "HI Characteristics" ;
+        sh:message  "HI Team is missing HI / CARE Characteristics annotation (meta:careCharacteristics)." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # At least one Human Agent member
+    sh:property [
+        sh:path                 hi:hasMember ;
+        sh:qualifiedMinCount    1 ;
+        sh:qualifiedValueShape  [ sh:class hi:HumanAgent ] ;
+        sh:name                 "Human Agent" ;
+        sh:message              "HI Team has no Human Agent (hi:hasMember of type hi:HumanAgent)." ;
+        sh:severity             sh:Violation ;
+    ] ;
+
+    # At least one Artificial Agent member
+    sh:property [
+        sh:path                 hi:hasMember ;
+        sh:qualifiedMinCount    1 ;
+        sh:qualifiedValueShape  [ sh:class hi:ArtificialAgent ] ;
+        sh:name                 "Artificial Agent" ;
+        sh:message              "HI Team has no Artificial Agent (hi:hasMember of type hi:ArtificialAgent)." ;
+        sh:severity             sh:Violation ;
+    ] ;
+
+    # At least one Capability (via any member agent)
+    sh:property [
+        sh:path     ( hi:hasMember hi:hasCapability ) ;
+        sh:minCount 1 ;
+        sh:name     "Required Capabilities" ;
+        sh:message  "HI Team has no associated Capabilities (hi:hasMember / hi:hasCapability)." ;
+        sh:severity sh:Violation ;
+    ] .
+
+
+# Goal 
+
+<NormShape_Goal> a sh:NodeShape ;
+    sh:targetClass hi:Goal ;
+    sh:name "Goal Normalization" ;
+    sh:description "Every hi:Goal must have a label and at least two tasks." ;
+
+    sh:property [
+        sh:path     rdfs:label ;
+        sh:minCount 1 ;
+        sh:name     "Goal Description" ;
+        sh:message  "Goal is missing a description (rdfs:label)." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    # Require at least 2 tasks: one human, one AI (minCount 2 as proxy check)
+    sh:property [
+        sh:path     hi:requiresTask ;
+        sh:minCount 2 ;
+        sh:name     "Tasks" ;
+        sh:message  "Goal requires at least 2 Tasks (hi:requiresTask): at least one Human Task and one AI Task." ;
+        sh:severity sh:Violation ;
+    ] .
+
+
+# TaskExecution
+
+<NormShape_TaskExecution> a sh:NodeShape ;
+    sh:targetClass hi:TaskExecution ;
+    sh:name "TaskExecution Normalization" ;
+    sh:description "Every hi:TaskExecution must link to an Evaluation, at least one Interaction, and have Input and Output annotations." ;
+
+    sh:property [
+        sh:path     hi:evaluatedBy ;
+        sh:minCount 1 ;
+        sh:name     "Evaluation" ;
+        sh:message  "Task Execution has no Evaluation (hi:evaluatedBy)." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path     hi:hasInteractionEpisode ;
+        sh:minCount 1 ;
+        sh:name     "Interaction Points" ;
+        sh:message  "Task Execution has no Interaction Episodes (hi:hasInteractionEpisode)." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path     meta:hasInput ;
+        sh:minCount 1 ;
+        sh:name     "Input Data" ;
+        sh:message  "Task Execution is missing Input Data annotation (meta:hasInput)." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path     meta:hasOutput ;
+        sh:minCount 1 ;
+        sh:name     "Outputs" ;
+        sh:message  "Task Execution is missing Outputs annotation (meta:hasOutput)." ;
+        sh:severity sh:Violation ;
+    ] .
+
+
+# Evaluation
+
+<NormShape_Evaluation> a sh:NodeShape ;
+    sh:targetClass hi:Evaluation ;
+    sh:name "Evaluation Normalization" ;
+    sh:description "Every hi:Evaluation must have metrics, decision points, and feedback mechanisms." ;
+
+    sh:property [
+        sh:path     hi:hasMetricConcept ;
+        sh:minCount 1 ;
+        sh:name     "Evaluation Metrics" ;
+        sh:message  "Evaluation has no Metrics (hi:hasMetricConcept)." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path     meta:hasDecisionPoint ;
+        sh:minCount 1 ;
+        sh:name     "Decision Points" ;
+        sh:message  "Evaluation is missing Decision Points annotation (meta:hasDecisionPoint)." ;
+        sh:severity sh:Violation ;
+    ] ;
+
+    sh:property [
+        sh:path     meta:hasFeedbackMechanism ;
+        sh:minCount 1 ;
+        sh:name     "Feedback Mechanisms" ;
+        sh:message  "Evaluation is missing Feedback Mechanisms annotation (meta:hasFeedbackMechanism)." ;
+        sh:severity sh:Violation ;
+    ] .
+

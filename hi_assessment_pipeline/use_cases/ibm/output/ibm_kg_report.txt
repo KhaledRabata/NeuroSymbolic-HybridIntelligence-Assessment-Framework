@@ -1,0 +1,16 @@
+KG Build Report: IBM
+==========================================
+Use Cases (scenarios)     : 8
+HI Teams                  : 8
+Human Agents (dedup.)     : 27
+Artificial Agents (dedup.): 24
+Goals                     : 8
+Human Tasks               : 31
+AI Tasks                  : 31
+Capabilities (dedup.)     : 17
+Contexts                  : 8
+Interactions              : 17
+Evaluations               : 8
+Metrics (dedup.)          : 51
+------------------------------------------
+Total RDF triples         : 1646

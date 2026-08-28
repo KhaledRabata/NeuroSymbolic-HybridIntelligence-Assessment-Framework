@@ -1,0 +1,16 @@
+KG Build Report: LEAPSPACE
+==========================================
+Use Cases (scenarios)     : 8
+HI Teams                  : 8
+Human Agents (dedup.)     : 12
+Artificial Agents (dedup.): 14
+Goals                     : 8
+Human Tasks               : 23
+AI Tasks                  : 20
+Capabilities (dedup.)     : 22
+Contexts                  : 8
+Interactions              : 15
+Evaluations               : 8
+Metrics (dedup.)          : 13
+------------------------------------------
+Total RDF triples         : 1019

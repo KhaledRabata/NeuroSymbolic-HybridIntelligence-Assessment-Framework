@@ -1,0 +1,12 @@
+{
+  "kg_triples": 1963,
+  "shapes_triples": 144,
+  "ontology_triples": 341,
+  "total_scenarios": 8,
+  "pass": 4,
+  "warning": 0,
+  "fail": 4,
+  "shacl_results_total": 6,
+  "unmapped_results": 0,
+  "overall_conforms": false
+}

@@ -1,0 +1,16 @@
+{
+  "build_runtime_sec": 0.10606694221496582,
+  "total_triples": 1963,
+  "usecases": 8,
+  "hiteams": 8,
+  "human_agents": 7,
+  "ai_agents": 25,
+  "goals": 8,
+  "human_tasks": 36,
+  "ai_tasks": 44,
+  "capabilities": 40,
+  "contexts": 8,
+  "interactions": 26,
+  "evaluations": 8,
+  "metrics": 27
+}

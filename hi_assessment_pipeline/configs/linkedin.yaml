@@ -1,0 +1,16 @@
+# LinkedIn Recruiter 
+# Phase 1 was conducted manually extraction sheet already exists
+# Run: python run_pipeline.py --config configs/linkedin.yaml
+
+usecase: linkedin
+csv_path: use_cases/linkedin/extractionsheet.csv
+ontology_path: ontology/hi-ontology.ttl
+output_dir: use_cases/linkedin/output
+
+# No 'phase1' block --> csv_path must exist, Phase 1 is skipped
+# To re-run Phase 1 (new research version), add a phase1 block:
+# phase1:
+#   target_system: "LinkedIn Recruiter / LinkedIn Hiring Assistant"
+#   anthropic_model: claude-opus-4-5
+#   max_searches: 60
+

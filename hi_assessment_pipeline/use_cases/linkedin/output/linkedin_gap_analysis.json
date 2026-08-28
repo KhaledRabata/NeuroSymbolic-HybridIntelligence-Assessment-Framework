@@ -1,0 +1,109 @@
+{
+  "usecase": "linkedin",
+  "phase": "5-gap-analysis",
+  "method": "neuro-symbolic",
+  "llm_model": "gpt-4o-mini",
+  "timestamp": "2026-08-25T11:20:01.457166+00:00",
+  "shacl_report_file": "/Users/khaledrabata/Desktop/Thesis/WorkSpace/hi_assessment_pipeline/use_cases/linkedin/output/linkedin_shacl_report.ttl",
+  "total_scenarios": 8,
+  "scenarios_with_gaps": 4,
+  "total_gaps": 4,
+  "care_gap_summary": {
+    "Collaborative": 4,
+    "Adaptive": 0,
+    "Responsible": 0,
+    "Explainable": 0,
+    "General": 0
+  },
+  "severity_summary": {
+    "Critical": 4,
+    "Major": 0,
+    "Minor": 0
+  },
+  "scenarios": {
+    "s1": {
+      "scenario_id": "S1",
+      "overall_assessment": "Scenario 'S1 — AI-Assisted Candidate Sourcing' satisfies all evaluated HI conformance constraints. All CARE dimensions (Collaborative, Adaptive, Responsible, Explainable) are structurally and semantically present in the KG.",
+      "gaps": []
+    },
+    "s2": {
+      "scenario_id": "S2",
+      "overall_assessment": "The AI-driven candidate evaluation system fails to meet fundamental HI requirements, particularly in collaborative interactions. The absence of an AI agent in recorded interactions severely undermines the system's ability to function as a hybrid intelligence.",
+      "gaps": [
+        {
+          "gap_id": "G-S2-01",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "Collaborative — AI in Interaction",
+          "gap_title": "Missing AI Agent in Interaction",
+          "gap_description": "The recorded human-AI interaction episode lacks the presence of an artificial agent, which is essential for collaboration. This absence means that the system cannot facilitate joint participation between humans and AI, violating the core principle of collaboration in HI.",
+          "hi_principle_violated": "Collaborative",
+          "practical_impact": "Without an AI agent involved, the system cannot support effective teamwork, leading to a breakdown in the collaborative process essential for candidate evaluation."
+        }
+      ]
+    },
+    "s3": {
+      "scenario_id": "S3",
+      "overall_assessment": "Scenario 'S3 — Automated Prescreening via InMail' satisfies all evaluated HI conformance constraints. All CARE dimensions (Collaborative, Adaptive, Responsible, Explainable) are structurally and semantically present in the KG.",
+      "gaps": []
+    },
+    "s4": {
+      "scenario_id": "S4",
+      "overall_assessment": "The scenario fails to meet HI conformance due to the absence of AI involvement in interactions. This lack of collaboration fundamentally undermines the human-AI partnership.",
+      "gaps": [
+        {
+          "gap_id": "G-S4-01",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "Collaborative — AI in Interaction",
+          "gap_title": "Absence of AI in Interaction",
+          "gap_description": "The recorded human-AI interaction episodes lack any involvement of an Artificial Agent, which is a fundamental requirement for collaborative systems. This absence means that the system cannot facilitate meaningful human-AI interactions, violating the core principle of collaboration.",
+          "hi_principle_violated": "CARE Collaborative",
+          "practical_impact": "Without AI participation, the system cannot support joint decision-making or shared task execution, severely limiting the effectiveness and utility of the AI in real-world applications."
+        }
+      ]
+    },
+    "s5": {
+      "scenario_id": "S5",
+      "overall_assessment": "Scenario 'S5 — Explainable AI-Assisted Search' satisfies all evaluated HI conformance constraints. All CARE dimensions (Collaborative, Adaptive, Responsible, Explainable) are structurally and semantically present in the KG.",
+      "gaps": []
+    },
+    "s6": {
+      "scenario_id": "S6",
+      "overall_assessment": "The scenario fails to meet HI conformance due to the absence of AI involvement in human interactions. This lack of collaboration fundamentally undermines the system's ability to function as a hybrid intelligence.",
+      "gaps": [
+        {
+          "gap_id": "G-S6-01",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "Collaborative — AI in Interaction",
+          "gap_title": "Absence of AI in Interaction",
+          "gap_description": "The recorded interactions lack any involvement of an Artificial Agent, which is a fundamental requirement for hybrid intelligence. Without AI participation, the essence of collaboration is lost, preventing effective joint decision-making between human agents.",
+          "hi_principle_violated": "Collaborative",
+          "practical_impact": "This absence severely limits the potential for meaningful collaboration between recruiters and hiring managers, ultimately affecting the quality and efficiency of the hiring process."
+        }
+      ]
+    },
+    "s7": {
+      "scenario_id": "S7",
+      "overall_assessment": "Scenario 'S7 — Long-Term Personalisation via HLTM' satisfies all evaluated HI conformance constraints. All CARE dimensions (Collaborative, Adaptive, Responsible, Explainable) are structurally and semantically present in the KG.",
+      "gaps": []
+    },
+    "s8": {
+      "scenario_id": "S8",
+      "overall_assessment": "The scenario fails to meet HI conformance due to the absence of human involvement in interactions, which undermines the collaborative nature of the system. This lack of collaboration significantly impacts the effectiveness of the AI system.",
+      "gaps": [
+        {
+          "gap_id": "G-S8-01",
+          "care_dimension": "Collaborative",
+          "severity": "Critical",
+          "component": "Collaborative — Human in Interaction",
+          "gap_title": "Absence of Human Agent in Interaction",
+          "gap_description": "The recorded human-AI interaction episode lacks any human agent involvement, which is a fundamental requirement for a hybrid intelligence system. This absence means that the system cannot facilitate true collaboration, as it relies solely on AI outputs without human engagement.",
+          "hi_principle_violated": "CARE Collaborative",
+          "practical_impact": "Without human participation, the AI system cannot effectively support decision-making or adapt to user needs, leading to a breakdown in collaborative efforts and reduced overall system efficacy."
+        }
+      ]
+    }
+  }
+}
